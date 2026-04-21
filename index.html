@@ -140,10 +140,242 @@ tr.shown td.details-control::before {
     <script>
         // Data for the companies (structured according to the complex JSON provided by the user)
         const companyData = [
-    
-
-
-[
+    {
+        "ID": "1",
+        "Unternehmensname": "Andritz AG",
+        "Unternehmensname bei Gründung": "J. Körösi k. k. priv. Maschinenfabrik und Eisengießerei Andritz in Graz",
+        "Gründungsdatum": "1852",
+        "Wirtschaftsektor bei Gründung": "Industrie",
+        "Branche bei Gründung": [
+            "Metallwarenproduktion",
+            "Maschinenproduktion (Kräne, Pumpen, Wasserturbinen u.v.m.)",
+            "Eisenherstellung",
+            "Herstellung von Gußwaren"
+        ],
+        "Branche": [
+            "Herstellung von Maschinen für die Papiererzeugung- und Verarbeitung",
+            "Herstellung von Dampfkesseln",
+            "Herstellung von Verbrennungsmotoren (ohne Motoren für Luft- und Straßenfahrzeuge)",
+            "Herstellung von hydraulischen und pneumatischen Komponenten und Systemen",
+            "Herstellung von Pumpen und Kompressoren",
+            "Herstellung von Hebezeugen und Fördermitteln",
+            "Herstellung von sonstigen nicht wirtschaftsspezifischen Maschinen",
+            "Herstellung von Werkzeugmaschinen für die Holzbearbeitung",
+            "Herstellung von sonstigen Werkzeugmaschinen",
+            "Herstellung von Maschinen für die Metallerzeugung von Walzwerkseinrichtungen und Gießmaschinen",
+            "Herstellung von Maschinen für die Nahrungs- und Genussmittelerzeugung und die Tabakverarbeitung",
+            "Reparatur von Maschinen",
+            "Installation von Maschinen und Ausrüstungen",
+            "Großhandel mit sonstigen Maschinen und Ausrüstungen"
+        ],
+        "Produktportfolio bei Gründung": [
+            "Eisenschnallen",
+            "Ringe",
+            "Ketten",
+            "Geschmiedewaren",
+            "Drahtnägel",
+            "Metallwaren",
+            "Maschinen",
+            "Eisen",
+            "Eisenbahnschienen"
+        ],
+        "Produktportfolio": [
+            "Abgasreinigungsanlagen",
+            "Anlagenbau",
+            "Biomasseheizkraftwerke",
+            "Dampferzeuger",
+            "Dampfkessel",
+            "Energieerzeugung",
+            "Energietechnische Anlagen",
+            "Entwässerungsanlagen",
+            "Industriekessel",
+            "Kessel",
+            "Kesselbau",
+            "Maschinen für die Holzstoffindustrie",
+            "Maschinen für die Papier-, Zellulose- und Holzstoffindustrie",
+            "Maschinen für die Papierindustrie",
+            "Maschinen für die Zelluloseindustrie",
+            "Maschinenbau",
+            "Oberflächenbehandlungsanlagen",
+            "Oberflächentechnik",
+            "Papierindustriemaschinen",
+            "Pumpen",
+            "Rauchgasreinigungsanlagen",
+            "Schlammentwässerungsmaschinen",
+            "Turbinen",
+            "Umwelttechnik",
+            "Umwelttechnische Anlagen",
+            "Wasserturbinen"
+        ],
+        "Firmennamen": [
+            {
+                "Von": "1852",
+                "Bis": "1900",
+                "Firmenname": "J. Körösi k. k. priv. Maschinenfabrik und Eisengießerei  Andritz in Graz"
+            },
+            {
+                "Von": "1900",
+                "Bis": "1995",
+                "Firmenname": "Maschinenfabrik Andritz Actiengesellschaft"
+            },
+            {
+                "Von": "1995",
+                "Bis": "",
+                "Firmenname": "Andritz AG"
+            }
+        ],
+        "Rechtsformen": [
+            {
+                "Von": "1852",
+                "Bis": "1900",
+                "Rechtsform": "Einzelunternehmen"
+            },
+            {
+                "Von": "1900",
+                "Bis": "",
+                "Rechtsform": "Aktiengesellschaft"
+            }
+        ],
+        "Eigentümerentwicklung": [
+            {
+                "Von": "1852",
+                "Bis": "1883",
+                "Eigentümer": "J. Körösi k. k. priv. Maschinenfabrik und Eisengießerei Andritz in Graz"
+            },
+            {
+                "Von": "1883",
+                "Bis": "1900",
+                "Eigentümer": "Österreichische Alpine Montangesellschaft (ÖAMG)"
+            },
+            {
+                "Von": "1900",
+                "Bis": "1938",
+                "Eigentümer": "Gutmann-Gruppe"
+            },
+            {
+                "Von": "1938",
+                "Bis": "1939",
+                "Eigentümer": "Ferdinand Knaffl–Gruppe (64%), Rudolf Steiner (14%), Harald Bilowitzki (8,5%)"
+            },
+            {
+                "Von": "1939",
+                "Bis": "1940",
+                "Eigentümer": "Kämper Motorenwerke AG (70,9%)"
+            },
+            {
+                "Von": "1940",
+                "Bis": "1941",
+                "Eigentümer": "Duisburger Deutsche Maschinenbau-Aktiengesellschaft (DEMAG) (70,9%)"
+            },
+            {
+                "Von": "1941",
+                "Bis": "1947",
+                "Eigentümer": "Wittenauer Maschinenfabrik GmbH (70,9%)"
+            },
+            {
+                "Von": "1947",
+                "Bis": "1949",
+                "Eigentümer": "Öffentliche Verwaltung unter Hans Schönbaumsfeld"
+            },
+            {
+                "Von": "1949",
+                "Bis": "1950",
+                "Eigentümer": "Restitution der Mehrheitsanteile an Wolfgang Gutmann"
+            },
+            {
+                "Von": "1950",
+                "Bis": "1956",
+                "Eigentümer": "Creditanstalt-Bankverein (CA)"
+            },
+            {
+                "Von": "1956",
+                "Bis": "1987",
+                "Eigentümer": "Creditanstalt-Bankverein (CA), Escher-Wyss"
+            },
+            {
+                "Von": "1987",
+                "Bis": "1999",
+                "Eigentümer": "Aktiengesellschaft für Industrie- und Verkehrswesen (AGIV) (50,3 %), Creditanstalt-Bankverein (42%), Sulzer-Escher-Wyss (7%)"
+            },
+            {
+                "Von": "1999",
+                "Bis": "2001",
+                "Eigentümer": "Carlyle Group GE Capital (47,5%), Unternehmens Invest AG (UIAG) (17%), Deutsche Beteiligungs AG (8%), Custos Privatstiftung (25%), Andere (2,5%)"
+            },
+            {
+                "Von": "2001",
+                "Bis": "2001",
+                "Eigentümer": "Erster Börsengang"
+            },
+            {
+                "Von": "2003",
+                "Bis": "",
+                "Eigentümer": "Zweiter Börsengang (Streubesitz (62%), Certus Beteiligungs GmbH (26%), Carlyle, UIAG, GE Capital, Deutsche Beteiligungs AG (10%), Eigene Aktien Management (2%)"
+            },
+            {
+                "Von": "?",
+                "Bis": "",
+                "Eigentümer": "Private und institutionelle Investoren (68,51%), Custos Vermögensverwaltungs GmbH (30,72%), Cerberus Vermögensverwaltungs GmbH (0,77%)"
+            }
+        ],
+        "Internationalität": "ja",
+        "Unternehmensgeschichte": "Der gebürtige Ungar Josef Körösi kam nach einer Handelsausbildung im Eisenwarenhandel als 20-Jähriger 1831 nach Graz. 1836 kaufte er gemeinsam mit Konrad Michalsky die kleine Kettenfabrik seines Arbeitgebers, er selbst erhielt nur die Handelslizenz für Eisenwaren, Michalsky die für die Produktion. 1841 verließ Letzterer das Unternehmen und Körösi leitete es fortan – nun mit der nötigen Herstellerlizenz – alleine. 1852 kaufte er die Trummermühle in Andritz und errichtete darauf eine Maschinenfabrik und ein Jahr später eine Eisengießerei – die Geburtsstunde der heutigen Andritz AG. Zweck der Unternehmung war die industrielle Herstellung von Metallwaren und Eisenprodukten. Der Protest der betroffenen Zünfte ließ nicht lange auf sich warten, bis ins Innenministerium drang er vor, doch vergebens. Die Entwicklung verlief rasant: Noch in den 1850er-Jahren expandierte man in die Schienenproduktion und den Brückenbau. 1872 übernahm Sohn Viktor Körösi die Geschäfte. Der Börsenkrach von 1873 brachte die ohnehin kränkelnde Maschinenfabrik in schwere Bedrängnis: Der Schuldenstand war stetig gestiegen, die Gehälter kaum noch zu bezahlen. Durch Schuldumschreibungen wurde die Österreichische Alpine-Montangesellschaft (ÖAMG) der größte Gläubiger der Andritzer Maschinenfabrik und übernahm die Fabrik schließlich im Jahr 1882. Die Eigentümerschaft währte nicht lange: Nachdem der Industrielle Karl Wittgenstein (Prager Eisenindustrie-Gesellschaft) 1897 die Aktienmehrheit an der Alpine-Montan übernommen hatte, setzte er ein erfolgreiches – die Produktion sollte sich bis 1913 gegenüber dem Vergleichsjahr 1882 verdreifachen – aber sozial hoch umstrittenes Sanierunsprogramm um. Die stärkste Kritik kam aus der Belegschaft, die sich an der Gleichzeitigkeit von massivem Stellenabbau und  generöser Ausschüttungspolitik erboste. Der Druck auf Wittgenstein wuchs. In der Folge zog sich dieser sukzessive aus den Geschäften zurück. 1899 übernahm die Prager Eisenindustrie-Gesellschaft im Rahmen der von Wittgenstein angestoßenen Konzentrations- und Zentralisierungspolitik die Mehrheitsanteile an der ÖAMG. Diese verkaufte die Andritzer Maschinenfabrik ein Jahr später an die Kohle-Magnaten Gebrüder Gutmann, die das Unternehmen in eine AG umwandelten und ihm einen neuen Namen verliehen: Maschinenfabrik Andritz Actiengesellschaft (1900). Nach über 18 Jahren als Zulieferer der ÖAMG musste man wieder auf eigenen Beinen stehen und das gelang: Durch gekonntes Verhandeln zog der technische Leiter Baron von Sochor drei Großprojekte des Eisenbahnministeriums an Land – zweite Spur nach Triest, Linz-Selzthal, Salzburg-Spittal an der Drau. Die Auftragsbücher waren nun auf Jahre gefüllt, Folgeaufträge (z.B. im Kranbau) gesichert, also investierte man in neue Felder, vor allem in die Konstruktion von Pumpen für die Kohleindustrie. Das Unternehmen belieferte nun die gesamte Industrie Österreich-Ungarns und erarbeitete sich bis zum Ausbruch des Ersten Weltkrieges einen hervorragenden Ruf. Während des Krieges wurde die Produktion gänzlich den Anforderungen der Kriegswirtschaft angepasst: Es wurden Komponenten für Granaten, Artilleriegeschosse und Munitionswägen hergestellt. Die Produktion der Dampfmaschinen und Kränen lief auf Hochtouren, nur die Turbinenproduktion ging rapide zurück. Die Zerstörung des Binnenmarkts durch den Zerfall der Habsburgermonarchie als Folge des Ersten Weltkrieges überwand die Andritzer Maschinenfabrik ungewöhnlich gut: Die Kontakte in die Nachfolgestaaten waren schnell wiederhergestellt und man profitierte vom Kohlemangel, als dessen Folge die Nachfrage nach hydroelektrischen Turbinen stieg. 1927 stattete man den Staudamm am Achensee mit Turbinen aus. Die Kräne wurden in ganz Europa nachgefragt, die Kreiselpumpen nach China, die Kompressoren nach Persien verschifft. Der New Yorker Börsenkrach 1929, der daraus resultierende Zusammenbruch der Creditanstalt 1931 und die massive Wirtschaftskrise zwangen die Maschinenfabrik Andritz, auf Notbetrieb umzustellen. Eigentümer Gutmann wollte die Fabrik schließen, doch das wäre für den Standort Graz katastrophal gewesen, weshalb das Finanzministerium Steuererleichterungen gewährte. Mit der Machtergreifung der Nationalsozialisten wurde die Fabrik „arisiert“ und ein Konsortium, die „Knaffl-Gruppe“, übernahm das Unternehmen, 1940 die Kämper Motoren AG, 1941 die Duisburger Deutsche Maschinenbau-Aktiengesellschaft (DEMAG), im selben Jahr deren Tochter, die Wittenauer Maschinenfabrik – als Rüstungsbetrieb produzierte man Kräne, Munition und Luftabwehrgeschütze. Dafür wurden ab 1941 Zwangsarbeiter eingesetzt. 1949 wurde an Wolfgang Gutmann restituiert, er verkaufte 1950 an den Creditanstalt-Bankenverein. Der Aufschwung des „Goldenen Zeitalters“ endete 1982, als die Dividenden nicht mehr ausbezahlt werden konnten: Zwar hatte man global expandiert, aber es verabsäumt, auf die Errichtung von Komplettanlagen umzuschwenken. 1984 begann mit der Einstellung von Ludwig Pfeiffer-Lissa als CEO eine Phase der Restrukturierung und Modernisierung. Mit Beginn der 1990er-Jahre wurde die Wachstumsstrategie mit der systematischen Akquisition von komplementären Unternehmen umgesetzt, um Industrieanlagen aus eigener Hand anbieten zu können. 1994 übernahm Wolfgang Leitner als CEO, der in der Restrukturierungsphase unter Pfeiffer-Lissa zuerst als externer Berater und ab 1987 als Finanzvorstand fungiert hatte. Leitner setzte die expansive Srategie fort. 2001 erfolgte der Börsengang sowie die Errichtung der ersten Niederlassung in China, 2005 die Übernahme der VA Tech Hydro. Seit 2002 errichtet man Zellstofffabriken und Wasserkraftwerke in Brasilien. 2019 modernisierte die ANDRITZ AG die erste Biomethanolanlage der Welt.",
+        "Standortfaktor": "1",
+        "Kulturerbe": "2",
+        "Quellen- und Literaturangaben": [
+            "Krautzer, Thomas: Born to last? Die Transformation einer 400-jährigen Eisen- und Stahlindustrie im Spiegel historischer, gegenwärtiger und künftiger Herausforderungen. Anmerkungen anlässlich der Gründung der Innberger Hauptgewerkschaft 1625. In: Montanhistorischer Verein Österreich (Hg.): 400. Jahrestag der Gründung der Innerberger Hauptgewerkschaft - Wie eine Fusion die Eisen- und Stahlwelt eroberte. Leoben. Montanhistorischer Verein Österreich. 2025. S. 15-32",
+            "Doppler, Georg: Andritz AG – eine historische Betriebsanalyse. Diplomarbeit. Graz 2009",
+            "Elstermann, Hannes/Knebelspieß, Stefanie/Schlenker, Max: 170 years of Andritz at work. Graz 2022",
+            "Mathis, Franz: Big Business in Österreich. Österreichische Großunternehmen in Kurzdarstellungen. München 1987",
+            "Wirtschafts-Compass – Andritz AG https://app.wirtschaftscompass.at/WirtschaftsCompass/profile/company/e6f588b7-05cb-44c0-a829-d82dcfd8658b (am 31.7.2024)",
+            "Website - https://www.andritz.com/group-de/gr-andritz-ag-graz (am 31.7.2024)",
+            "Compass 1955, Finanz, S. 615",
+            "Compass 1995, Teil 1, Finanz, S. 344."
+        ],
+        "Weiterführende Literatur und Quellen": [
+            "Oral History Archiv Graz: U/AL 2521-11/09. DI Dr. Heinz AUTISCHER (Jg. 1970)",
+            "Oral History Archiv Graz: OHA_TS_040_ROTSCHÄDL_02_2020_TRANS - Walter Rotschädl, Zentralbetriebsrat Andritz AG 1986",
+            "Franz Hlavac/Helmut Kletzander (1985): Bauring II (Politik am Freitag). ORF, 25.01.1985."
+        ],
+        "": "",
+        "Wirtschaftssektor": [
+            "Industrie"
+        ],
+        "Addresse bei Gründung": {
+            "Straße": "",
+            "Hausnummer": "Trummermühle, Graz",
+            "Ortsbeschreibung": "Trümmermühle, Graz"
+        },
+        "Aktuelle Addresse": {
+            "Straße": "Stattegger Straße",
+            "Hausnummer": "18",
+            "PLZ": "8045",
+            "Ort": "Graz",
+            "Lat": 47.1071566,
+            "Long": 15.4203958
+        },
+        "Mitarbeiterzahl": {
+            "Zahl der Mitarbeiter:innen bei Gründung": {
+                "Anzahl": "300",
+                "Jahr": ""
+            },
+            "Zahl der Mitarbeiter:innen 1950er": {
+                "Anzahl": "1000",
+                "Jahr": "1955"
+            },
+            "Zahl der Mitarbeiter:innen 1990er": {
+                "Anzahl": "2350",
+                "Jahr": "1995"
+            },
+            "Zahl der Mitarbeiter:innen": {
+                "Anzahl": "2078",
+                "Jahr": ""
+            }
+        },
+        "Wirtschaftssektor bei Gründung": [
+            "Industrie"
+        ]
+    },
     {
         "ID": "2",
         "Unternehmensname": "Josef Göbel GmbH",
@@ -235,7 +467,9 @@ tr.shown td.details-control::before {
             "Straße": "Fladnitz a. d. Teichalm",
             "Hausnummer": "119",
             "PLZ": "8163",
-            "Ort": "Fladnitz a. d. Teichalm"
+            "Ort": "Fladnitz a. d. Teichalm",
+            "Lat": 47.281988,
+            "Long": 15.4799117
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -350,7 +584,9 @@ tr.shown td.details-control::before {
             "Straße": "Hammerfeldgasse",
             "Hausnummer": "163",
             "PLZ": "8970",
-            "Ort": "Schladming"
+            "Ort": "Schladming",
+            "Lat": 47.3940415,
+            "Long": 13.6867878
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -453,7 +689,9 @@ tr.shown td.details-control::before {
             "Straße": "Grazer Straße",
             "Hausnummer": "8",
             "PLZ": "8630",
-            "Ort": "Mariazell"
+            "Ort": "Mariazell",
+            "Lat": 47.7725525,
+            "Long": 15.3166078
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -615,7 +853,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptplatz",
             "Hausnummer": "59",
             "PLZ": "8962",
-            "Ort": "Gröbming"
+            "Ort": "Gröbming",
+            "Lat": 47.444778,
+            "Long": 13.9014133
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -734,7 +974,9 @@ tr.shown td.details-control::before {
             "Straße": "Turnau",
             "Hausnummer": "25",
             "PLZ": "8625",
-            "Ort": "Turnau"
+            "Ort": "Turnau",
+            "Lat": 47.559473,
+            "Long": 15.3391994
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -886,7 +1128,9 @@ tr.shown td.details-control::before {
             "Straße": "Baierdorf-Umgebung",
             "Hausnummer": "61",
             "PLZ": "8184",
-            "Ort": "Anger"
+            "Ort": "Anger",
+            "Lat": 47.2764229,
+            "Long": 15.695984
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -1025,7 +1269,9 @@ tr.shown td.details-control::before {
             "Straße": "Dr.-Karl-Renner-Gasse",
             "Hausnummer": "5",
             "PLZ": "8160",
-            "Ort": "Weiz"
+            "Ort": "Weiz",
+            "Lat": 47.2174575,
+            "Long": 15.623701
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -1205,7 +1451,9 @@ tr.shown td.details-control::before {
             "Straße": "Eggenberger Allee",
             "Hausnummer": "36",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0707195,
+            "Long": 15.4031029
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -1295,7 +1543,9 @@ tr.shown td.details-control::before {
             "Straße": "Eichfeld",
             "Hausnummer": "64",
             "PLZ": "8480",
-            "Ort": "Mureck"
+            "Ort": "Mureck",
+            "Lat": 46.7253664,
+            "Long": 15.7723913
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -1455,7 +1705,9 @@ tr.shown td.details-control::before {
             "Straße": "Forststraße",
             "Hausnummer": "12",
             "PLZ": "8073",
-            "Ort": "Wagnitz"
+            "Ort": "Wagnitz",
+            "Lat": 46.9841495,
+            "Long": 15.4572926
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -1601,7 +1853,9 @@ tr.shown td.details-control::before {
             "Straße": "Herrengasse",
             "Hausnummer": "7",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0705842,
+            "Long": 15.439595
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -1749,7 +2003,9 @@ tr.shown td.details-control::before {
             "Straße": "Anton-Paar-Straße",
             "Hausnummer": "20",
             "PLZ": "8054",
-            "Ort": "Graz-Straßgang"
+            "Ort": "Graz-Straßgang",
+            "Lat": 47.0317283,
+            "Long": 15.4042064
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -1947,7 +2203,9 @@ tr.shown td.details-control::before {
             "Straße": "Turmgasse",
             "Hausnummer": "67",
             "PLZ": "8700",
-            "Ort": "Leoben"
+            "Ort": "Leoben",
+            "Lat": 47.3562767,
+            "Long": 15.0903654
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -2180,7 +2438,9 @@ tr.shown td.details-control::before {
             "Straße": "Wannersdorf",
             "Hausnummer": "80",
             "PLZ": "8130",
-            "Ort": "Frohnleiten"
+            "Ort": "Frohnleiten",
+            "Lat": 47.278091,
+            "Long": 15.3298779
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -2297,7 +2557,9 @@ tr.shown td.details-control::before {
             "Straße": "Lugitschstraße",
             "Hausnummer": "1",
             "PLZ": "8330",
-            "Ort": "Feldbach"
+            "Ort": "Feldbach",
+            "Lat": 46.9576844,
+            "Long": 15.8864124
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -2439,7 +2701,9 @@ tr.shown td.details-control::before {
             "Straße": "Flurstarße",
             "Hausnummer": "61",
             "PLZ": "8280",
-            "Ort": "Fürstenfeld"
+            "Ort": "Fürstenfeld",
+            "Lat": 47.0499925,
+            "Long": 16.0816815
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -2552,7 +2816,9 @@ tr.shown td.details-control::before {
             "Straße": "Hall",
             "Hausnummer": "165",
             "PLZ": "8911",
-            "Ort": "Admont"
+            "Ort": "Admont",
+            "Lat": 47.6028595,
+            "Long": 14.4579583
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -2795,7 +3061,9 @@ tr.shown td.details-control::before {
             "Straße": "Fabriksstraße",
             "Hausnummer": "11",
             "PLZ": "8580",
-            "Ort": "Köflach"
+            "Ort": "Köflach",
+            "Lat": 47.0644882,
+            "Long": 15.0850032
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -2906,7 +3174,9 @@ tr.shown td.details-control::before {
             "Straße": "Bairisch Kölldorf",
             "Hausnummer": "12",
             "PLZ": "8344",
-            "Ort": "Bairisch Kölldorf"
+            "Ort": "Bairisch Kölldorf",
+            "Lat": 46.871387,
+            "Long": 15.9269948
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -3032,7 +3302,9 @@ tr.shown td.details-control::before {
             "Straße": "Großklein",
             "Hausnummer": "26",
             "PLZ": "8452",
-            "Ort": "Großklein"
+            "Ort": "Großklein",
+            "Lat": 46.727797,
+            "Long": 15.4409959
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -3171,7 +3443,9 @@ tr.shown td.details-control::before {
             "Straße": "Gniebing",
             "Hausnummer": "52",
             "PLZ": "8380",
-            "Ort": "Feldbach"
+            "Ort": "Feldbach",
+            "Lat": 46.9597619,
+            "Long": 15.851282
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -3413,7 +3687,9 @@ tr.shown td.details-control::before {
             "Straße": "Dr. Luigi Angeli-Straße",
             "Hausnummer": "9",
             "PLZ": "8761",
-            "Ort": "Pöls"
+            "Ort": "Pöls",
+            "Lat": 47.2200518,
+            "Long": 14.5840118
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -3528,7 +3804,9 @@ tr.shown td.details-control::before {
             "Straße": "Mariazeller Straße",
             "Hausnummer": "45c",
             "PLZ": "8680",
-            "Ort": "Mürzzuschlag"
+            "Ort": "Mürzzuschlag",
+            "Lat": 47.6137984,
+            "Long": 15.6674828
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -3680,7 +3958,9 @@ tr.shown td.details-control::before {
             "Straße": "Wiener Straße",
             "Hausnummer": "35",
             "PLZ": "8720",
-            "Ort": "Knittelfeld"
+            "Ort": "Knittelfeld",
+            "Lat": 47.2193681,
+            "Long": 14.8278805
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -3806,7 +4086,9 @@ tr.shown td.details-control::before {
             "Straße": "Studenzen",
             "Hausnummer": "37",
             "PLZ": "8322",
-            "Ort": "Studenzen"
+            "Ort": "Studenzen",
+            "Lat": 47.0030362,
+            "Long": 15.7608189
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -3968,7 +4250,9 @@ tr.shown td.details-control::before {
             "Straße": "Wiener Straße",
             "Hausnummer": "2",
             "PLZ": "8630",
-            "Ort": "Mariazell"
+            "Ort": "Mariazell",
+            "Lat": 47.7739727,
+            "Long": 15.318263
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -4089,7 +4373,9 @@ tr.shown td.details-control::before {
             "Straße": "Stadtwerkgasse",
             "Hausnummer": "2",
             "PLZ": "8580",
-            "Ort": "Köflach"
+            "Ort": "Köflach",
+            "Lat": 47.0608607,
+            "Long": 15.0782041
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -4368,7 +4654,9 @@ tr.shown td.details-control::before {
             "Straße": "Brucker Straße",
             "Hausnummer": "21",
             "PLZ": "8101",
-            "Ort": "Gratkorn"
+            "Ort": "Gratkorn",
+            "Lat": 47.1352633,
+            "Long": 15.3345176
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -4572,7 +4860,9 @@ tr.shown td.details-control::before {
             "Straße": "Werschweg",
             "Hausnummer": "8",
             "PLZ": "8054",
-            "Ort": "Seiersberg-Pirka"
+            "Ort": "Seiersberg-Pirka",
+            "Lat": 47.0077418,
+            "Long": 15.4116863
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -4826,7 +5116,9 @@ tr.shown td.details-control::before {
             "Straße": "Dreihackengasse",
             "Hausnummer": "20",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0680639,
+            "Long": 15.4281309
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -4981,7 +5273,9 @@ tr.shown td.details-control::before {
             "Straße": "Vornholz",
             "Hausnummer": "118",
             "PLZ": "8250",
-            "Ort": "Vorau"
+            "Ort": "Vorau",
+            "Lat": 47.3917174,
+            "Long": 15.8337418
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -5132,7 +5426,9 @@ tr.shown td.details-control::before {
             "Straße": "Stadtwerkestraße",
             "Hausnummer": "9",
             "PLZ": "8600",
-            "Ort": "Bruck an der Mur"
+            "Ort": "Bruck an der Mur",
+            "Lat": 47.4093793,
+            "Long": 15.2645309
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -5361,7 +5657,9 @@ tr.shown td.details-control::before {
             "Straße": "Viktor-Franz-Straße",
             "Hausnummer": "13-23",
             "PLZ": "8051",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0901704,
+            "Long": 15.4144914
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -5503,7 +5801,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptstraße",
             "Hausnummer": "13",
             "PLZ": "8280",
-            "Ort": "Fürstenfeld"
+            "Ort": "Fürstenfeld",
+            "Lat": 47.0496792,
+            "Long": 16.0793126
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -5638,7 +5938,9 @@ tr.shown td.details-control::before {
             "Straße": "Brückenkopfgasse",
             "Hausnummer": "11",
             "PLZ": "8330",
-            "Ort": "Feldbach"
+            "Ort": "Feldbach",
+            "Lat": 46.955086,
+            "Long": 15.8812442
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -5844,7 +6146,9 @@ tr.shown td.details-control::before {
             "Straße": "Gadollaplatz",
             "Hausnummer": "1",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0568463,
+            "Long": 15.4458642
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -5967,7 +6271,9 @@ tr.shown td.details-control::before {
             "Straße": "Emil-Mann-Gasse",
             "Hausnummer": "1",
             "PLZ": "8074",
-            "Ort": "Raaba"
+            "Ort": "Raaba",
+            "Lat": 47.0317131,
+            "Long": 15.4869394
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -6101,7 +6407,9 @@ tr.shown td.details-control::before {
             "Straße": "Kohlberg",
             "Hausnummer": "63",
             "PLZ": "8342",
-            "Ort": "Kohlberg"
+            "Ort": "Kohlberg",
+            "Lat": 46.9060711,
+            "Long": 15.7961275
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -6215,7 +6523,9 @@ tr.shown td.details-control::before {
             "Straße": "Mantrach",
             "Hausnummer": "23",
             "PLZ": "8452",
-            "Ort": "Großklein"
+            "Ort": "Großklein",
+            "Lat": 46.7583657,
+            "Long": 15.4073705
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -6370,7 +6680,9 @@ tr.shown td.details-control::before {
             "Straße": "Weyerngasse",
             "Hausnummer": "125",
             "PLZ": "8720",
-            "Ort": "Knittelfeld"
+            "Ort": "Knittelfeld",
+            "Lat": 47.2020433,
+            "Long": 14.820173
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -6508,7 +6820,9 @@ tr.shown td.details-control::before {
             "Straße": "Untere Brunnenstraße",
             "Hausnummer": "36",
             "PLZ": "8344",
-            "Ort": "Bad Gleichenberg"
+            "Ort": "Bad Gleichenberg",
+            "Lat": 46.8734677,
+            "Long": 15.912538
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -6647,7 +6961,9 @@ tr.shown td.details-control::before {
             "Straße": "Oedterstraße",
             "Hausnummer": "8",
             "PLZ": "8330",
-            "Ort": "Feldbach"
+            "Ort": "Feldbach",
+            "Lat": 46.9494303,
+            "Long": 15.8875882
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -6778,7 +7094,9 @@ tr.shown td.details-control::before {
             "Straße": "Industriestraße",
             "Hausnummer": "33",
             "PLZ": "8200",
-            "Ort": "Gleisdorf"
+            "Ort": "Gleisdorf",
+            "Lat": 47.1092528,
+            "Long": 15.699026
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -6891,7 +7209,9 @@ tr.shown td.details-control::before {
             "Straße": "Söchau",
             "Hausnummer": "26",
             "PLZ": "8362",
-            "Ort": "Söchau"
+            "Ort": "Söchau",
+            "Lat": 47.0319531,
+            "Long": 16.015039
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -7053,7 +7373,9 @@ tr.shown td.details-control::before {
             "Straße": "Dreihackengasse",
             "Hausnummer": "20",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0680639,
+            "Long": 15.4281309
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -7199,7 +7521,9 @@ tr.shown td.details-control::before {
             "Straße": "Stadtwerkestraße",
             "Hausnummer": "6",
             "PLZ": "8605",
-            "Ort": "Kapfenberg"
+            "Ort": "Kapfenberg",
+            "Lat": 47.4477012,
+            "Long": 15.3017039
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -7437,7 +7761,9 @@ tr.shown td.details-control::before {
             "Straße": "Judenburgerstraße",
             "Hausnummer": "188",
             "PLZ": "8580",
-            "Ort": "Köflach"
+            "Ort": "Köflach",
+            "Lat": 47.0785566,
+            "Long": 15.0713487
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -7646,7 +7972,9 @@ tr.shown td.details-control::before {
             "Straße": "Triester Straße",
             "Hausnummer": "464",
             "PLZ": "8055",
-            "Ort": "Seiersberg-Pirka"
+            "Ort": "Seiersberg-Pirka",
+            "Lat": 47.0047875,
+            "Long": 15.3941982
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -7811,7 +8139,9 @@ tr.shown td.details-control::before {
             "Straße": "Hofgasse",
             "Hausnummer": "5",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0726542,
+            "Long": 15.4398648
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -7944,7 +8274,9 @@ tr.shown td.details-control::before {
             "Straße": "",
             "Hausnummer": "18",
             "PLZ": "8563",
-            "Ort": "Ligist"
+            "Ort": "Ligist",
+            "Lat": 46.9930883,
+            "Long": 15.207952
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -8125,7 +8457,9 @@ tr.shown td.details-control::before {
             "Straße": "Bahnstraße",
             "Hausnummer": "9",
             "PLZ": "8720",
-            "Ort": "Knittelfeld"
+            "Ort": "Knittelfeld",
+            "Lat": 47.215043,
+            "Long": 14.8312558
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -8256,7 +8590,9 @@ tr.shown td.details-control::before {
             "Straße": "",
             "Hausnummer": "17",
             "PLZ": "8162",
-            "Ort": "Passail"
+            "Ort": "Passail",
+            "Lat": 47.2828856,
+            "Long": 15.5138665
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -8370,7 +8706,9 @@ tr.shown td.details-control::before {
             "Straße": "Teichalm",
             "Hausnummer": "77",
             "PLZ": "8163",
-            "Ort": "Fladnitz an der Teichalm"
+            "Ort": "Fladnitz an der Teichalm",
+            "Lat": 47.3531679,
+            "Long": 15.4672527
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -8521,7 +8859,9 @@ tr.shown td.details-control::before {
             "Straße": "Neutorgasse",
             "Hausnummer": "26",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0700415,
+            "Long": 15.4359767
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -8691,7 +9031,9 @@ tr.shown td.details-control::before {
             "Straße": "Mitterberger Straße",
             "Hausnummer": "36",
             "PLZ": "8962",
-            "Ort": "Gröbming"
+            "Ort": "Gröbming",
+            "Lat": 47.4444887,
+            "Long": 13.9023829
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -8835,7 +9177,9 @@ tr.shown td.details-control::before {
             "Straße": "Salzburger Siedlung",
             "Hausnummer": "258",
             "PLZ": "8970",
-            "Ort": "Schladming"
+            "Ort": "Schladming",
+            "Lat": 47.3911671,
+            "Long": 13.658896
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -8932,7 +9276,9 @@ tr.shown td.details-control::before {
             "Straße": "",
             "Hausnummer": "88",
             "PLZ": "8222",
-            "Ort": "Sankt Johann bei Herberstein"
+            "Ort": "Sankt Johann bei Herberstein",
+            "Lat": 47.2143937,
+            "Long": 15.8180443
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -9125,7 +9471,9 @@ tr.shown td.details-control::before {
             "Straße": "Mothwurfgasse",
             "Hausnummer": "1",
             "PLZ": "8101",
-            "Ort": "Gratkorn"
+            "Ort": "Gratkorn",
+            "Lat": 47.1210339,
+            "Long": 15.3664032
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -9286,7 +9634,9 @@ tr.shown td.details-control::before {
             "Straße": "Am Tivoli",
             "Hausnummer": "2",
             "PLZ": "8700",
-            "Ort": "Leoben"
+            "Ort": "Leoben",
+            "Lat": 47.3766606,
+            "Long": 15.089581
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -9452,7 +9802,9 @@ tr.shown td.details-control::before {
             "Straße": "Ragnitz",
             "Hausnummer": "5",
             "PLZ": "8413",
-            "Ort": "St. Georgen an der Stiefing"
+            "Ort": "St. Georgen an der Stiefing",
+            "Lat": 46.8759143,
+            "Long": 15.5790451
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -9614,7 +9966,9 @@ tr.shown td.details-control::before {
             "Straße": "Möbersdorf",
             "Hausnummer": "7",
             "PLZ": "8740",
-            "Ort": "Zeltweg"
+            "Ort": "Zeltweg",
+            "Lat": 47.1912045,
+            "Long": 14.7549244
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -9742,7 +10096,9 @@ tr.shown td.details-control::before {
             "Straße": "Schloßleiten",
             "Hausnummer": "11",
             "PLZ": "8820",
-            "Ort": "Neumarkt"
+            "Ort": "Neumarkt",
+            "Lat": 47.0745856,
+            "Long": 14.4251795
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -9902,7 +10258,9 @@ tr.shown td.details-control::before {
             "Straße": "Am Eisernen Tor",
             "Hausnummer": "3",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0684145,
+            "Long": 15.4423794
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -10054,7 +10412,9 @@ tr.shown td.details-control::before {
             "Straße": "Wiener Straße",
             "Hausnummer": "1",
             "PLZ": "8230",
-            "Ort": "Hartberg"
+            "Ort": "Hartberg",
+            "Lat": 47.2813858,
+            "Long": 15.9694102
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -10236,7 +10596,9 @@ tr.shown td.details-control::before {
             "Straße": "Schießstattgasse",
             "Hausnummer": "65",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.062846,
+            "Long": 15.4385615
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -10423,7 +10785,9 @@ tr.shown td.details-control::before {
             "Straße": "Murgasse",
             "Hausnummer": "14",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.071083,
+            "Long": 15.4358047
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -10543,7 +10907,9 @@ tr.shown td.details-control::before {
             "Straße": "Gleichenberger Straße",
             "Hausnummer": "12",
             "PLZ": "8330",
-            "Ort": "Feldbach"
+            "Ort": "Feldbach",
+            "Lat": 46.9503448,
+            "Long": 15.8921301
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -10738,7 +11104,9 @@ tr.shown td.details-control::before {
             "Straße": "Triesterstraße",
             "Hausnummer": "167",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0459054,
+            "Long": 15.4300283
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -10861,7 +11229,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptplatz",
             "Hausnummer": "6",
             "PLZ": "8280",
-            "Ort": "Fürstenfeld"
+            "Ort": "Fürstenfeld",
+            "Lat": 47.051418,
+            "Long": 16.0767726
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -11013,7 +11383,9 @@ tr.shown td.details-control::before {
             "Straße": "Ungersorf",
             "Hausnummer": "8",
             "PLZ": "8170",
-            "Ort": "Frohnleiten"
+            "Ort": "Frohnleiten",
+            "Lat": 47.2715315,
+            "Long": 15.3260206
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -11154,7 +11526,9 @@ tr.shown td.details-control::before {
             "Straße": "Murfeldstraße",
             "Hausnummer": "8",
             "PLZ": "8112",
-            "Ort": "Gratwein"
+            "Ort": "Gratwein",
+            "Lat": 47.1337094,
+            "Long": 15.3224426
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -11350,7 +11724,9 @@ tr.shown td.details-control::before {
             "Straße": "Andritzer Reichsstraße",
             "Hausnummer": "26",
             "PLZ": "8045",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.1013464,
+            "Long": 15.4262742
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -11554,7 +11930,9 @@ tr.shown td.details-control::before {
             "Straße": "Gradnerstraße",
             "Hausnummer": "110",
             "PLZ": "8055",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0222013,
+            "Long": 15.4138479
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -11688,7 +12066,9 @@ tr.shown td.details-control::before {
             "Straße": "Schmiedgasse",
             "Hausnummer": "31",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0678397,
+            "Long": 15.4402766
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -11834,7 +12214,9 @@ tr.shown td.details-control::before {
             "Straße": "Riedergasse",
             "Hausnummer": "9",
             "PLZ": "8750",
-            "Ort": "Judenburg"
+            "Ort": "Judenburg",
+            "Lat": 47.1671238,
+            "Long": 14.6594846
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -11941,7 +12323,9 @@ tr.shown td.details-control::before {
             "Straße": "Mariahilferstraße",
             "Hausnummer": "7",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0715472,
+            "Long": 15.4335137
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -12066,7 +12450,9 @@ tr.shown td.details-control::before {
             "Straße": "Puntigamer Straße",
             "Hausnummer": "98",
             "PLZ": "8041",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.036345,
+            "Long": 15.4473042
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -12235,7 +12621,9 @@ tr.shown td.details-control::before {
             "Straße": "Jakoministraße",
             "Hausnummer": "1",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.066644,
+            "Long": 15.4422199
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -12342,7 +12730,9 @@ tr.shown td.details-control::before {
             "Straße": "Radersdorf",
             "Hausnummer": "41",
             "PLZ": "8263",
-            "Ort": "Großwilfersdorf"
+            "Ort": "Großwilfersdorf",
+            "Lat": 47.0765505,
+            "Long": 15.9893682
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -12477,7 +12867,9 @@ tr.shown td.details-control::before {
             "Straße": "Pöllauberg",
             "Hausnummer": "88",
             "PLZ": "8225",
-            "Ort": "Pöllauberg"
+            "Ort": "Pöllauberg",
+            "Lat": 47.3044768,
+            "Long": 15.8389577
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -12663,7 +13055,9 @@ tr.shown td.details-control::before {
             "Straße": "Proleber Straße",
             "Hausnummer": "10",
             "PLZ": "8712",
-            "Ort": "Niklasdorf"
+            "Ort": "Niklasdorf",
+            "Lat": 47.3986328,
+            "Long": 15.1517903
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -12867,7 +13261,9 @@ tr.shown td.details-control::before {
             "Straße": "Grazer Straße",
             "Hausnummer": "1",
             "PLZ": "8510",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.098093,
+            "Long": 15.4187858
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -13064,7 +13460,9 @@ tr.shown td.details-control::before {
             "Straße": "Premstätter Straße",
             "Hausnummer": "41",
             "PLZ": "8054",
-            "Ort": "Pirka"
+            "Ort": "Pirka",
+            "Lat": 47.0058527,
+            "Long": 15.3995438
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -13195,7 +13593,9 @@ tr.shown td.details-control::before {
             "Straße": "Eckertstraße",
             "Hausnummer": "95a",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0684447,
+            "Long": 15.3991935
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -13372,7 +13772,9 @@ tr.shown td.details-control::before {
             "Straße": "Grazer Straße",
             "Hausnummer": "249",
             "PLZ": "8523",
-            "Ort": "Frauental an der Lassnitz"
+            "Ort": "Frauental an der Lassnitz",
+            "Lat": 46.8260936,
+            "Long": 15.2555129
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -13499,7 +13901,9 @@ tr.shown td.details-control::before {
             "Straße": "Florianigasse",
             "Hausnummer": "18",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0577407,
+            "Long": 15.422158
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -13637,7 +14041,9 @@ tr.shown td.details-control::before {
             "Straße": "Oberhof",
             "Hausnummer": "122",
             "PLZ": "8933",
-            "Ort": "Sankt Gallen"
+            "Ort": "Sankt Gallen",
+            "Lat": 47.6825365,
+            "Long": 14.6142425
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -13758,7 +14164,9 @@ tr.shown td.details-control::before {
             "Straße": "Wiener Straße",
             "Hausnummer": "64",
             "PLZ": "8630",
-            "Ort": "Mariazell"
+            "Ort": "Mariazell",
+            "Lat": 47.7778083,
+            "Long": 15.3129192
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -13861,7 +14269,9 @@ tr.shown td.details-control::before {
             "Straße": "",
             "Hausnummer": "15",
             "PLZ": "8344",
-            "Ort": "Haag"
+            "Ort": "Haag",
+            "Lat": 46.8475418,
+            "Long": 15.9020973
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -13998,7 +14408,9 @@ tr.shown td.details-control::before {
             "Straße": "Stein an der Enns",
             "Hausnummer": "51",
             "PLZ": "8961",
-            "Ort": "Großsölk"
+            "Ort": "Großsölk",
+            "Lat": 47.4382833,
+            "Long": 13.9390779
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -14135,7 +14547,9 @@ tr.shown td.details-control::before {
             "Straße": "Packer Straße",
             "Hausnummer": "4",
             "PLZ": "8570",
-            "Ort": "Voitsberg"
+            "Ort": "Voitsberg",
+            "Lat": 47.0549576,
+            "Long": 15.1365135
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -14297,7 +14711,9 @@ tr.shown td.details-control::before {
             "Straße": "Obere Bahnstraße",
             "Hausnummer": "63a",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0576412,
+            "Long": 15.4436171
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -14450,7 +14866,9 @@ tr.shown td.details-control::before {
             "Straße": "Maxendorf",
             "Hausnummer": "43",
             "PLZ": "8082",
-            "Ort": "Kirchbach-Zerlach"
+            "Ort": "Kirchbach-Zerlach",
+            "Lat": 46.9368052,
+            "Long": 15.6774148
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -14615,7 +15033,9 @@ tr.shown td.details-control::before {
             "Straße": "Michaeligasse",
             "Hausnummer": "8",
             "PLZ": "8230",
-            "Ort": "Hartberg"
+            "Ort": "Hartberg",
+            "Lat": 47.2793014,
+            "Long": 15.9686297
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -14756,7 +15176,9 @@ tr.shown td.details-control::before {
             "Straße": "Marktstraße",
             "Hausnummer": "50",
             "PLZ": "8967",
-            "Ort": "Haus"
+            "Ort": "Haus",
+            "Lat": 47.4104533,
+            "Long": 13.7675265
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -14875,7 +15297,9 @@ tr.shown td.details-control::before {
             "Straße": "Schützing",
             "Hausnummer": "4",
             "PLZ": "8330",
-            "Ort": "Feldbach"
+            "Ort": "Feldbach",
+            "Lat": 46.9693124,
+            "Long": 15.8993063
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -15010,7 +15434,9 @@ tr.shown td.details-control::before {
             "Straße": "Riegersburg",
             "Hausnummer": "172",
             "PLZ": "8333",
-            "Ort": "Riegersburg"
+            "Ort": "Riegersburg",
+            "Lat": 47.0038959,
+            "Long": 15.9220068
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -15127,7 +15553,9 @@ tr.shown td.details-control::before {
             "Straße": "Graden",
             "Hausnummer": "100",
             "PLZ": "8592",
-            "Ort": "Salla"
+            "Ort": "Salla",
+            "Lat": 47.1085953,
+            "Long": 14.9729655
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -15243,7 +15671,9 @@ tr.shown td.details-control::before {
             "Straße": "Oberdorfer Straße",
             "Hausnummer": "30",
             "PLZ": "8572",
-            "Ort": "Bärnbach"
+            "Ort": "Bärnbach",
+            "Lat": 47.0571957,
+            "Long": 15.1369844
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -15383,7 +15813,9 @@ tr.shown td.details-control::before {
             "Straße": "Grazer Gasse",
             "Hausnummer": "58",
             "PLZ": "8430",
-            "Ort": "Leibnitz"
+            "Ort": "Leibnitz",
+            "Lat": 46.7804762,
+            "Long": 15.5407005
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -15568,7 +16000,9 @@ tr.shown td.details-control::before {
             "Straße": "Plabutscherstraße",
             "Hausnummer": "61",
             "PLZ": "8051",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0880943,
+            "Long": 15.4036139
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -15734,7 +16168,9 @@ tr.shown td.details-control::before {
             "Straße": "Zehensdorf",
             "Hausnummer": "100",
             "PLZ": "8092",
-            "Ort": "Mettersdorf am Sassbach"
+            "Ort": "Mettersdorf am Sassbach",
+            "Lat": 46.8256011,
+            "Long": 15.7299959
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -15860,7 +16296,9 @@ tr.shown td.details-control::before {
             "Straße": "Mettersdorf",
             "Hausnummer": "87",
             "PLZ": "8092",
-            "Ort": "Mettersdorf am Saßbach"
+            "Ort": "Mettersdorf am Saßbach",
+            "Lat": 46.8015642,
+            "Long": 15.7098332
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -15962,7 +16400,9 @@ tr.shown td.details-control::before {
             "Straße": "Laintal",
             "Hausnummer": "75",
             "PLZ": "8793",
-            "Ort": "Trofaiach"
+            "Ort": "Trofaiach",
+            "Lat": 47.4270566,
+            "Long": 15.0458318
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -16142,7 +16582,9 @@ tr.shown td.details-control::before {
             "Straße": "Koßgasse",
             "Hausnummer": "21",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0653197,
+            "Long": 15.4619572
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -16271,7 +16713,9 @@ tr.shown td.details-control::before {
             "Straße": "Pernitschstraße",
             "Hausnummer": "31",
             "PLZ": "8451",
-            "Ort": "Heimschuh"
+            "Ort": "Heimschuh",
+            "Lat": 46.7870458,
+            "Long": 15.4774225
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -16413,7 +16857,9 @@ tr.shown td.details-control::before {
             "Straße": "Fabrikstraße",
             "Hausnummer": "15",
             "PLZ": "8530",
-            "Ort": "Deutschlandsberg"
+            "Ort": "Deutschlandsberg",
+            "Lat": 46.8173642,
+            "Long": 15.2146134
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -16521,7 +16967,9 @@ tr.shown td.details-control::before {
             "Straße": "Burggasse",
             "Hausnummer": "1",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0720316,
+            "Long": 15.4430846
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -16691,7 +17139,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptstraße",
             "Hausnummer": "8",
             "PLZ": "8582",
-            "Ort": "Rosental an der Kainach"
+            "Ort": "Rosental an der Kainach",
+            "Lat": 47.0527265,
+            "Long": 15.1283997
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -16825,7 +17275,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptstraße",
             "Hausnummer": "35",
             "PLZ": "8262",
-            "Ort": "Ilz"
+            "Ort": "Ilz",
+            "Lat": 47.0875238,
+            "Long": 15.9258432
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -16983,7 +17435,9 @@ tr.shown td.details-control::before {
             "Straße": "Herrengasse",
             "Hausnummer": "",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0698686,
+            "Long": 15.4400671
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -17153,7 +17607,9 @@ tr.shown td.details-control::before {
             "Straße": "Werk-VI-Straße",
             "Hausnummer": "28",
             "PLZ": "8605",
-            "Ort": "Kapfenberg"
+            "Ort": "Kapfenberg",
+            "Lat": 47.4501207,
+            "Long": 15.3109682
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -17252,7 +17708,9 @@ tr.shown td.details-control::before {
             "Straße": "Lindenalle",
             "Hausnummer": "2a",
             "PLZ": "8720",
-            "Ort": "Knittelfeld"
+            "Ort": "Knittelfeld",
+            "Lat": 47.2147399,
+            "Long": 14.8297233
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -17398,7 +17856,9 @@ tr.shown td.details-control::before {
             "Straße": "Lagergasse",
             "Hausnummer": "322",
             "PLZ": "8055",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0404815,
+            "Long": 15.4407115
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -17558,7 +18018,9 @@ tr.shown td.details-control::before {
             "Straße": "Kastellfeldgasse",
             "Hausnummer": "39",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.061986,
+            "Long": 15.4493729
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -17683,7 +18145,9 @@ tr.shown td.details-control::before {
             "Straße": "Pischelsdorf",
             "Hausnummer": "37",
             "PLZ": "8212",
-            "Ort": "Pischelsdorf am Kulm"
+            "Ort": "Pischelsdorf am Kulm",
+            "Lat": 47.1730168,
+            "Long": 15.8053201
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -17802,7 +18266,9 @@ tr.shown td.details-control::before {
             "Straße": "Bismarckgasse",
             "Hausnummer": "2-4",
             "PLZ": "8160",
-            "Ort": "Weiz"
+            "Ort": "Weiz",
+            "Lat": 47.2182911,
+            "Long": 15.6240211
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -17989,7 +18455,9 @@ tr.shown td.details-control::before {
             "Straße": "Göstinger Straße",
             "Hausnummer": "88",
             "PLZ": "8051",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0876426,
+            "Long": 15.4023903
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -18174,7 +18642,9 @@ tr.shown td.details-control::before {
             "Straße": "Pratergasse",
             "Hausnummer": "138",
             "PLZ": "8990",
-            "Ort": "Bad Aussee"
+            "Ort": "Bad Aussee",
+            "Lat": 47.6071447,
+            "Long": 13.7852968
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -18341,7 +18811,9 @@ tr.shown td.details-control::before {
             "Straße": "Georgigasse",
             "Hausnummer": "40",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0731276,
+            "Long": 15.4035669
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -18511,7 +18983,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptstraße",
             "Hausnummer": "49",
             "PLZ": "8793",
-            "Ort": "Trofaiach"
+            "Ort": "Trofaiach",
+            "Lat": 47.4258555,
+            "Long": 15.0090484
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -18673,7 +19147,9 @@ tr.shown td.details-control::before {
             "Straße": "Autaler Straße",
             "Hausnummer": "77",
             "PLZ": "8042",
-            "Ort": "Graz-Raaba"
+            "Ort": "Graz-Raaba",
+            "Lat": 47.0355004,
+            "Long": 15.4931543
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -18830,7 +19306,9 @@ tr.shown td.details-control::before {
             "Straße": "Sachendorfergasse",
             "Hausnummer": "6",
             "PLZ": "8720",
-            "Ort": "Knittelfeld"
+            "Ort": "Knittelfeld",
+            "Lat": 47.2147399,
+            "Long": 14.8297233
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -18951,7 +19429,9 @@ tr.shown td.details-control::before {
             "Straße": "Großwilfersdorf",
             "Hausnummer": "240",
             "PLZ": "8263",
-            "Ort": "Großwilfersdorf"
+            "Ort": "Großwilfersdorf",
+            "Lat": 47.0795651,
+            "Long": 15.9926641
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -19107,7 +19587,9 @@ tr.shown td.details-control::before {
             "Straße": "Franz-Perl-Straße",
             "Hausnummer": "1",
             "PLZ": "8200",
-            "Ort": "Gleisdorf"
+            "Ort": "Gleisdorf",
+            "Lat": 47.1055436,
+            "Long": 15.7061469
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -19246,7 +19728,9 @@ tr.shown td.details-control::before {
             "Straße": "Grazer Straße",
             "Hausnummer": "84",
             "PLZ": "8344",
-            "Ort": "Bad Gleichenberg"
+            "Ort": "Bad Gleichenberg",
+            "Lat": 46.8872405,
+            "Long": 15.8975317
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -19392,7 +19876,9 @@ tr.shown td.details-control::before {
             "Straße": "Gaswerkstraße",
             "Hausnummer": "60",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0640843,
+            "Long": 15.4029837
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -19558,7 +20044,9 @@ tr.shown td.details-control::before {
             "Straße": "Floßländ",
             "Hausnummer": "16",
             "PLZ": "8720",
-            "Ort": "Knittelfeld"
+            "Ort": "Knittelfeld",
+            "Lat": 47.2122281,
+            "Long": 14.8414672
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -19689,7 +20177,9 @@ tr.shown td.details-control::before {
             "Straße": "Gleinstätten",
             "Hausnummer": "136",
             "PLZ": "8443",
-            "Ort": "Gleinstätten"
+            "Ort": "Gleinstätten",
+            "Lat": 46.7579902,
+            "Long": 15.3772668
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -19831,7 +20321,9 @@ tr.shown td.details-control::before {
             "Straße": "Südtiroler Straße",
             "Hausnummer": "9",
             "PLZ": "8750",
-            "Ort": "Judenburg"
+            "Ort": "Judenburg",
+            "Lat": 47.1691281,
+            "Long": 14.6785712
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -19951,7 +20443,9 @@ tr.shown td.details-control::before {
             "Straße": "Lindenstraße",
             "Hausnummer": "14-16",
             "PLZ": "8665",
-            "Ort": "Langenwang"
+            "Ort": "Langenwang",
+            "Lat": 47.5670853,
+            "Long": 15.6152149
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -20115,7 +20609,9 @@ tr.shown td.details-control::before {
             "Straße": "Bahnhofgürtel",
             "Hausnummer": "37",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0793218,
+            "Long": 15.4164097
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -20229,7 +20725,9 @@ tr.shown td.details-control::before {
             "Straße": "Grazer Straße",
             "Hausnummer": "59",
             "PLZ": "8680",
-            "Ort": "Mürzzuschlag"
+            "Ort": "Mürzzuschlag",
+            "Lat": 47.6014425,
+            "Long": 15.6686861
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -20339,7 +20837,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptstraße",
             "Hausnummer": "38",
             "PLZ": "8650",
-            "Ort": "Kindberg"
+            "Ort": "Kindberg",
+            "Lat": 47.5054043,
+            "Long": 15.4486951
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -20498,7 +20998,9 @@ tr.shown td.details-control::before {
             "Straße": "Gersdorf an der Feistritz",
             "Hausnummer": "58",
             "PLZ": "8212",
-            "Ort": "Gersdorf an der Feistritz"
+            "Ort": "Gersdorf an der Feistritz",
+            "Lat": 47.1622227,
+            "Long": 15.8538305
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -20624,7 +21126,9 @@ tr.shown td.details-control::before {
             "Straße": "Anton Bauerweg",
             "Hausnummer": "17",
             "PLZ": "8112",
-            "Ort": "Gratwein"
+            "Ort": "Gratwein",
+            "Lat": 47.1319359,
+            "Long": 15.3083738
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -20782,7 +21286,9 @@ tr.shown td.details-control::before {
             "Straße": "Ressavarstraße",
             "Hausnummer": "46",
             "PLZ": "8230",
-            "Ort": "Hartberg"
+            "Ort": "Hartberg",
+            "Lat": 47.2818999,
+            "Long": 15.9743212
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -20947,7 +21453,9 @@ tr.shown td.details-control::before {
             "Straße": "Werkstraße",
             "Hausnummer": "3",
             "PLZ": "8072",
-            "Ort": "Fernitz"
+            "Ort": "Fernitz",
+            "Lat": 46.966279,
+            "Long": 15.5031395
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -21076,7 +21584,9 @@ tr.shown td.details-control::before {
             "Straße": "Kirchenviertel",
             "Hausnummer": "121",
             "PLZ": "8673",
-            "Ort": "Ratten"
+            "Ort": "Ratten",
+            "Lat": 47.4839349,
+            "Long": 15.7186561
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -21189,7 +21699,9 @@ tr.shown td.details-control::before {
             "Straße": "Evangelimanngasse",
             "Hausnummer": "5",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0502786,
+            "Long": 15.4535345
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -21308,7 +21820,9 @@ tr.shown td.details-control::before {
             "Straße": "Halbenrain",
             "Hausnummer": "14",
             "PLZ": "8492",
-            "Ort": "Halbenrain"
+            "Ort": "Halbenrain",
+            "Lat": 46.7185312,
+            "Long": 15.9572365
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -21414,7 +21928,9 @@ tr.shown td.details-control::before {
             "Straße": "Freimoosstraße",
             "Hausnummer": "24",
             "PLZ": "8820",
-            "Ort": "Neumarkt in der Steiermark"
+            "Ort": "Neumarkt in der Steiermark",
+            "Lat": 47.0689779,
+            "Long": 14.4302732
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -21624,7 +22140,9 @@ tr.shown td.details-control::before {
             "Straße": "Mehlplatz",
             "Hausnummer": "2",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0714566,
+            "Long": 15.440603
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -21741,7 +22259,9 @@ tr.shown td.details-control::before {
             "Straße": "Europastraße",
             "Hausnummer": "1",
             "PLZ": "8200",
-            "Ort": "Gleisdorf"
+            "Ort": "Gleisdorf",
+            "Lat": 47.108078,
+            "Long": 15.7021752
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -21892,7 +22412,9 @@ tr.shown td.details-control::before {
             "Straße": "Hintersieding",
             "Hausnummer": "12",
             "PLZ": "8741",
-            "Ort": "Eppenstein"
+            "Ort": "Eppenstein",
+            "Lat": 47.1266869,
+            "Long": 14.7360155
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -22015,7 +22537,9 @@ tr.shown td.details-control::before {
             "Straße": "Radlpaßstraße",
             "Hausnummer": "4",
             "PLZ": "8530",
-            "Ort": "Deutschlandsberg"
+            "Ort": "Deutschlandsberg",
+            "Lat": 46.8279634,
+            "Long": 15.2370349
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -22164,7 +22688,9 @@ tr.shown td.details-control::before {
             "Straße": "Bundesstraße",
             "Hausnummer": "7",
             "PLZ": "8833",
-            "Ort": "Teufenbach"
+            "Ort": "Teufenbach",
+            "Lat": 47.135891,
+            "Long": 14.3640041
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -22309,7 +22835,9 @@ tr.shown td.details-control::before {
             "Straße": "",
             "Hausnummer": "39",
             "PLZ": "8213",
-            "Ort": "Gersdorf an der Feistritz"
+            "Ort": "Gersdorf an der Feistritz",
+            "Lat": 47.1622227,
+            "Long": 15.8538305
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -22468,7 +22996,9 @@ tr.shown td.details-control::before {
             "Straße": "Glockenspielplatz",
             "Hausnummer": "1",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.071288,
+            "Long": 15.4409487
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -22664,7 +23194,9 @@ tr.shown td.details-control::before {
             "Straße": "Am Gewerbegrund",
             "Hausnummer": "91",
             "PLZ": "8124",
-            "Ort": "Übelbach"
+            "Ort": "Übelbach",
+            "Lat": 47.2188794,
+            "Long": 15.2577002
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -22813,7 +23345,9 @@ tr.shown td.details-control::before {
             "Straße": "Gimplach",
             "Hausnummer": "3",
             "PLZ": "8793",
-            "Ort": "Trofaiach"
+            "Ort": "Trofaiach",
+            "Lat": 47.4281175,
+            "Long": 14.9828679
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -23015,7 +23549,9 @@ tr.shown td.details-control::before {
             "Straße": "Eggenberger Straße",
             "Hausnummer": "16",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0709329,
+            "Long": 15.4150898
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -23207,7 +23743,9 @@ tr.shown td.details-control::before {
             "Straße": "Forst",
             "Hausnummer": "217",
             "PLZ": "8812",
-            "Ort": "Mariahof"
+            "Ort": "Mariahof",
+            "Lat": 47.0993139,
+            "Long": 14.4008011
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -23384,7 +23922,9 @@ tr.shown td.details-control::before {
             "Straße": "Obere Bachgasse",
             "Hausnummer": "74",
             "PLZ": "8911",
-            "Ort": "Admont"
+            "Ort": "Admont",
+            "Lat": 47.5726251,
+            "Long": 14.4600443
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -23615,7 +24155,9 @@ tr.shown td.details-control::before {
             "Straße": "Gewerbepark",
             "Hausnummer": "9",
             "PLZ": "8075",
-            "Ort": "Hart bei Graz"
+            "Ort": "Hart bei Graz",
+            "Lat": 47.0434805,
+            "Long": 15.5161252
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -23791,7 +24333,9 @@ tr.shown td.details-control::before {
             "Straße": "Grazer Straße",
             "Hausnummer": "10",
             "PLZ": "8630",
-            "Ort": "Mariazell"
+            "Ort": "Mariazell",
+            "Lat": 47.7724373,
+            "Long": 15.3162402
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -23956,7 +24500,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptplatz",
             "Hausnummer": "11/13",
             "PLZ": "8184",
-            "Ort": "Anger"
+            "Ort": "Anger",
+            "Lat": 47.2737313,
+            "Long": 15.6888363
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -24187,7 +24733,9 @@ tr.shown td.details-control::before {
             "Straße": "Liechtensteinstraße",
             "Hausnummer": "15",
             "PLZ": "8530",
-            "Ort": "Deutschlandsberg"
+            "Ort": "Deutschlandsberg",
+            "Lat": 46.8203027,
+            "Long": 15.2196071
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -24347,7 +24895,9 @@ tr.shown td.details-control::before {
             "Straße": "Am Eisernen Tor",
             "Hausnummer": "2",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0686445,
+            "Long": 15.4420231
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -24512,7 +25062,9 @@ tr.shown td.details-control::before {
             "Straße": "Mooslandl",
             "Hausnummer": "53",
             "PLZ": "8921",
-            "Ort": "Lainbach"
+            "Ort": "Lainbach",
+            "Lat": 47.6360429,
+            "Long": 14.7667838
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -24757,7 +25309,9 @@ tr.shown td.details-control::before {
             "Straße": "Alpinestraße",
             "Hausnummer": "1",
             "PLZ": "8740",
-            "Ort": "Zeltweg"
+            "Ort": "Zeltweg",
+            "Lat": 47.1854878,
+            "Long": 14.7485164
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -25060,7 +25614,9 @@ tr.shown td.details-control::before {
             "Straße": "Erna-Diez-Straße",
             "Hausnummer": "2",
             "PLZ": "8053",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0383094,
+            "Long": 15.4078901
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -25207,7 +25763,9 @@ tr.shown td.details-control::before {
             "Straße": "Gamlitzer Straße",
             "Hausnummer": "103",
             "PLZ": "8461",
-            "Ort": "Ehrenhausen"
+            "Ort": "Ehrenhausen",
+            "Lat": 46.7207078,
+            "Long": 15.5866866
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -25358,7 +25916,9 @@ tr.shown td.details-control::before {
             "Straße": "Hirnsdorf",
             "Hausnummer": "1",
             "PLZ": "8221",
-            "Ort": "Hirnsdorf"
+            "Ort": "Hirnsdorf",
+            "Lat": 47.1937662,
+            "Long": 15.8277076
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -25501,7 +26061,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptstraße",
             "Hausnummer": "119",
             "PLZ": "8740",
-            "Ort": "Zeltweg"
+            "Ort": "Zeltweg",
+            "Lat": 47.1904967,
+            "Long": 14.7460704
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -25765,7 +26327,9 @@ tr.shown td.details-control::before {
             "Straße": "Sackstraße",
             "Hausnummer": "11-13",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.073346,
+            "Long": 15.4358027
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -25936,7 +26500,9 @@ tr.shown td.details-control::before {
             "Straße": "Alte Poststraße",
             "Hausnummer": "400",
             "PLZ": "8055",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0397337,
+            "Long": 15.4257257
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -26049,7 +26615,9 @@ tr.shown td.details-control::before {
             "Straße": "Dillach",
             "Hausnummer": "41",
             "PLZ": "8072",
-            "Ort": "Fernitz"
+            "Ort": "Fernitz",
+            "Lat": 46.9265473,
+            "Long": 15.5095473
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -26186,7 +26754,9 @@ tr.shown td.details-control::before {
             "Straße": "Gratweiner Straße",
             "Hausnummer": "23",
             "PLZ": "8111",
-            "Ort": "Judendorf-Straßengel"
+            "Ort": "Judendorf-Straßengel",
+            "Lat": 47.116633,
+            "Long": 15.3415773
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -26514,7 +27084,9 @@ tr.shown td.details-control::before {
             "Straße": "Hofgasse",
             "Hausnummer": "6",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0724616,
+            "Long": 15.4396881
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -26659,7 +27231,9 @@ tr.shown td.details-control::before {
             "Straße": "Wiener Straße",
             "Hausnummer": "7",
             "PLZ": "8680",
-            "Ort": "Mürzzuschlag"
+            "Ort": "Mürzzuschlag",
+            "Lat": 47.6061657,
+            "Long": 15.6725023
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -26774,7 +27348,9 @@ tr.shown td.details-control::before {
             "Straße": "",
             "Hausnummer": "3",
             "PLZ": "8605",
-            "Ort": "Kapfenberg"
+            "Ort": "Kapfenberg",
+            "Lat": 47.4454222,
+            "Long": 15.2925099
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -27049,7 +27625,9 @@ tr.shown td.details-control::before {
             "Straße": "Franz-Heresch-Straße",
             "Hausnummer": "2",
             "PLZ": "8410",
-            "Ort": "Wildon"
+            "Ort": "Wildon",
+            "Lat": 46.8911264,
+            "Long": 15.5180435
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -27213,7 +27791,9 @@ tr.shown td.details-control::before {
             "Straße": "Bundesstraße",
             "Hausnummer": "28",
             "PLZ": "8472",
-            "Ort": "Spielfeld"
+            "Ort": "Spielfeld",
+            "Lat": 46.7007794,
+            "Long": 15.6367801
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -27304,7 +27884,9 @@ tr.shown td.details-control::before {
             "Straße": "Dorfstraße",
             "Hausnummer": "75",
             "PLZ": "8401",
-            "Ort": "Kalsdorf bei Graz"
+            "Ort": "Kalsdorf bei Graz",
+            "Lat": 46.9568253,
+            "Long": 15.4862159
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -27440,7 +28022,9 @@ tr.shown td.details-control::before {
             "Straße": "Fürstenfelderstraße",
             "Hausnummer": "4",
             "PLZ": "8350",
-            "Ort": "Fehring"
+            "Ort": "Fehring",
+            "Lat": 46.9400325,
+            "Long": 16.0084215
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -27563,7 +28147,9 @@ tr.shown td.details-control::before {
             "Straße": "Eibiswalder Straße",
             "Hausnummer": "80",
             "PLZ": "8454",
-            "Ort": "Arnfels"
+            "Ort": "Arnfels",
+            "Lat": 46.6769982,
+            "Long": 15.3993594
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -27753,7 +28339,9 @@ tr.shown td.details-control::before {
             "Straße": "Klosterwiesgasse",
             "Hausnummer": "18",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0657446,
+            "Long": 15.4441379
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -27865,7 +28453,9 @@ tr.shown td.details-control::before {
             "Straße": "Kreuzgasse",
             "Hausnummer": "35",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.083976,
+            "Long": 15.44212
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -28073,7 +28663,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptplatz",
             "Hausnummer": "13",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0713757,
+            "Long": 15.43832
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -28177,7 +28769,9 @@ tr.shown td.details-control::before {
             "Straße": "Neuholdaugasse",
             "Hausnummer": "5",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0607684,
+            "Long": 15.4372513
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -28311,7 +28905,9 @@ tr.shown td.details-control::before {
             "Straße": "Waldbach",
             "Hausnummer": "51",
             "PLZ": "8253",
-            "Ort": "Waldbach"
+            "Ort": "Waldbach",
+            "Lat": 47.4490406,
+            "Long": 15.838124
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -28430,7 +29026,9 @@ tr.shown td.details-control::before {
             "Straße": "Ilz",
             "Hausnummer": "150",
             "PLZ": "8262",
-            "Ort": "Ilz"
+            "Ort": "Ilz",
+            "Lat": 47.0915175,
+            "Long": 15.8868195
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -28610,7 +29208,9 @@ tr.shown td.details-control::before {
             "Straße": "Alte Poststraße",
             "Hausnummer": "171",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0655408,
+            "Long": 15.4140905
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -28743,7 +29343,9 @@ tr.shown td.details-control::before {
             "Straße": "Brückenkopfgasse",
             "Hausnummer": "7",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0661882,
+            "Long": 15.432672
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -28904,7 +29506,9 @@ tr.shown td.details-control::before {
             "Straße": "Freimoosstraße",
             "Hausnummer": "1-3",
             "PLZ": "8820",
-            "Ort": "Neumarkt"
+            "Ort": "Neumarkt",
+            "Lat": 47.071682,
+            "Long": 14.428667
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -28995,7 +29599,9 @@ tr.shown td.details-control::before {
             "Straße": "Mayr-Melnhof-Straße",
             "Hausnummer": "8",
             "PLZ": "8700",
-            "Ort": "Leoben"
+            "Ort": "Leoben",
+            "Lat": 47.3609534,
+            "Long": 15.0993567
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -29138,7 +29744,9 @@ tr.shown td.details-control::before {
             "Straße": "Aflenz Kurort",
             "Hausnummer": "91",
             "PLZ": "8623",
-            "Ort": "Aflenz"
+            "Ort": "Aflenz",
+            "Lat": 47.5445216,
+            "Long": 15.2415525
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -29319,7 +29927,9 @@ tr.shown td.details-control::before {
             "Straße": "Harl",
             "Hausnummer": "73",
             "PLZ": "8182",
-            "Ort": "Puch bei Weiz"
+            "Ort": "Puch bei Weiz",
+            "Lat": 47.2327836,
+            "Long": 15.7325844
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -29567,7 +30177,9 @@ tr.shown td.details-control::before {
             "Straße": "Jauerburggasse",
             "Hausnummer": "18",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0516925,
+            "Long": 15.4521187
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -29740,7 +30352,9 @@ tr.shown td.details-control::before {
             "Straße": "Viktor-Franz-Straße",
             "Hausnummer": "9",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0896911,
+            "Long": 15.4115479
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -29837,7 +30451,9 @@ tr.shown td.details-control::before {
             "Straße": "Salzlände",
             "Hausnummer": "16",
             "PLZ": "8700",
-            "Ort": "Leoben"
+            "Ort": "Leoben",
+            "Lat": 47.3802315,
+            "Long": 15.1020487
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -29962,7 +30578,9 @@ tr.shown td.details-control::before {
             "Straße": "Ausseer Straße",
             "Hausnummer": "8",
             "PLZ": "8940",
-            "Ort": "Liezen"
+            "Ort": "Liezen",
+            "Lat": 47.5690918,
+            "Long": 14.2424012
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -30077,7 +30695,9 @@ tr.shown td.details-control::before {
             "Straße": "Feldgasse",
             "Hausnummer": "3",
             "PLZ": "8160",
-            "Ort": "Weiz"
+            "Ort": "Weiz",
+            "Lat": 47.2166164,
+            "Long": 15.6210105
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -30206,7 +30826,9 @@ tr.shown td.details-control::before {
             "Straße": "Eggenberger Straße",
             "Hausnummer": "20",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0708972,
+            "Long": 15.4139648
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -30447,7 +31069,9 @@ tr.shown td.details-control::before {
             "Straße": "Klammstraße",
             "Hausnummer": "24",
             "PLZ": "8160",
-            "Ort": "Weiz"
+            "Ort": "Weiz",
+            "Lat": 47.227449,
+            "Long": 15.6154209
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -30621,7 +31245,9 @@ tr.shown td.details-control::before {
             "Straße": "Fischeraustraße",
             "Hausnummer": "31",
             "PLZ": "8051",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0965842,
+            "Long": 15.4085963
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -30808,7 +31434,9 @@ tr.shown td.details-control::before {
             "Straße": "Feldkirchner Straße",
             "Hausnummer": "191",
             "PLZ": "8055",
-            "Ort": "Seiersberg"
+            "Ort": "Seiersberg",
+            "Lat": 47.0128782,
+            "Long": 15.4329746
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -31159,7 +31787,9 @@ tr.shown td.details-control::before {
             "Straße": "Eggenberger Straße",
             "Hausnummer": "31",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0694574,
+            "Long": 15.4126048
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -31288,7 +31918,9 @@ tr.shown td.details-control::before {
             "Straße": "Ludersdorf",
             "Hausnummer": "256",
             "PLZ": "8200",
-            "Ort": "Gleisdorf"
+            "Ort": "Gleisdorf",
+            "Lat": 47.1054105,
+            "Long": 15.7098162
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -31600,7 +32232,9 @@ tr.shown td.details-control::before {
             "Straße": "Austriastraße",
             "Hausnummer": "6",
             "PLZ": "8720",
-            "Ort": "Knittelfeld"
+            "Ort": "Knittelfeld",
+            "Lat": 47.2150711,
+            "Long": 14.8343392
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -31701,7 +32335,9 @@ tr.shown td.details-control::before {
             "Straße": "Pachern Hauptstraße",
             "Hausnummer": "90",
             "PLZ": "8075",
-            "Ort": "Hart bei Graz"
+            "Ort": "Hart bei Graz",
+            "Lat": 47.0446569,
+            "Long": 15.5186112
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -32023,7 +32659,9 @@ tr.shown td.details-control::before {
             "Straße": "Mariazeller Straße",
             "Hausnummer": "25",
             "PLZ": "8605",
-            "Ort": "Kapfenberg"
+            "Ort": "Kapfenberg",
+            "Lat": 47.444969,
+            "Long": 15.2829547
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -32258,7 +32896,9 @@ tr.shown td.details-control::before {
             "Straße": "Kerpelystraße",
             "Hausnummer": "199",
             "PLZ": "8700",
-            "Ort": "Leoben"
+            "Ort": "Leoben",
+            "Lat": 47.3797548,
+            "Long": 15.0598674
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -32389,7 +33029,9 @@ tr.shown td.details-control::before {
             "Straße": "Wiener Str.",
             "Hausnummer": "19",
             "PLZ": "8630",
-            "Ort": "Mariazell"
+            "Ort": "Mariazell",
+            "Lat": 47.7748808,
+            "Long": 15.3164381
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -32538,7 +33180,9 @@ tr.shown td.details-control::before {
             "Straße": "Gewerbestraße",
             "Hausnummer": "1166",
             "PLZ": "8962",
-            "Ort": "Gröbming"
+            "Ort": "Gröbming",
+            "Lat": 47.4534523,
+            "Long": 13.9131777
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -32655,7 +33299,9 @@ tr.shown td.details-control::before {
             "Straße": "Gartengasse",
             "Hausnummer": "36",
             "PLZ": "8200",
-            "Ort": "Gleisdorf"
+            "Ort": "Gleisdorf",
+            "Lat": 47.1025213,
+            "Long": 15.7104886
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -32880,7 +33526,9 @@ tr.shown td.details-control::before {
             "Straße": "Bahnhofstraße",
             "Hausnummer": "2",
             "PLZ": "8600",
-            "Ort": "Bruck an der Mur"
+            "Ort": "Bruck an der Mur",
+            "Lat": 47.411986,
+            "Long": 15.2752143
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -33033,7 +33681,9 @@ tr.shown td.details-control::before {
             "Straße": "Messeplatz",
             "Hausnummer": "1",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0580632,
+            "Long": 15.4486825
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -33345,7 +33995,9 @@ tr.shown td.details-control::before {
             "Straße": "Feldgasse",
             "Hausnummer": "14",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0542391,
+            "Long": 15.4245676
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -33597,7 +34249,9 @@ tr.shown td.details-control::before {
             "Straße": "Arnsteinstraße",
             "Hausnummer": "22",
             "PLZ": "8570",
-            "Ort": "Voitsberg"
+            "Ort": "Voitsberg",
+            "Lat": 47.0433109,
+            "Long": 15.1521246
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -33729,7 +34383,9 @@ tr.shown td.details-control::before {
             "Straße": "Bahnhofstraße",
             "Hausnummer": "19",
             "PLZ": "8401",
-            "Ort": "Kalsdorf bei Graz"
+            "Ort": "Kalsdorf bei Graz",
+            "Lat": 46.964557,
+            "Long": 15.4746151
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -33893,7 +34549,9 @@ tr.shown td.details-control::before {
             "Straße": "Wagendorferstraße",
             "Hausnummer": "30a",
             "PLZ": "8423",
-            "Ort": "Wagendorf"
+            "Ort": "Wagendorf",
+            "Lat": 46.7519147,
+            "Long": 15.6166534
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -34157,7 +34815,9 @@ tr.shown td.details-control::before {
             "Straße": "Kärntner Straße",
             "Hausnummer": "30",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.061195,
+            "Long": 15.4203229
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -34428,7 +35088,9 @@ tr.shown td.details-control::before {
             "Straße": "Alpinestraße",
             "Hausnummer": "1",
             "PLZ": "8740",
-            "Ort": "Zeltweg"
+            "Ort": "Zeltweg",
+            "Lat": 47.1854878,
+            "Long": 14.7485164
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -34682,7 +35344,9 @@ tr.shown td.details-control::before {
             "Straße": "Alpinestraße",
             "Hausnummer": "1",
             "PLZ": "8740",
-            "Ort": "Zeltweg"
+            "Ort": "Zeltweg",
+            "Lat": 47.1854878,
+            "Long": 14.7485164
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -34920,7 +35584,9 @@ tr.shown td.details-control::before {
             "Straße": "Erzberg",
             "Hausnummer": "1",
             "PLZ": "8790",
-            "Ort": "Eisenerz"
+            "Ort": "Eisenerz",
+            "Lat": 47.5420788,
+            "Long": 14.8857099
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -35177,7 +35843,9 @@ tr.shown td.details-control::before {
             "Straße": "Magnesitstraße",
             "Hausnummer": "2",
             "PLZ": "8664",
-            "Ort": "Großveitsch"
+            "Ort": "Großveitsch",
+            "Lat": 47.6075518,
+            "Long": 15.4533402
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -35398,7 +36066,9 @@ tr.shown td.details-control::before {
             "Straße": "Stahlgasse",
             "Hausnummer": "10-12",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0807001,
+            "Long": 15.4163986
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -35624,7 +36294,9 @@ tr.shown td.details-control::before {
             "Straße": "Bergmannstraße",
             "Hausnummer": "39",
             "PLZ": "8713",
-            "Ort": "St. Stefan ob Leoben"
+            "Ort": "St. Stefan ob Leoben",
+            "Lat": 47.3347521,
+            "Long": 14.9780619
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -35863,7 +36535,9 @@ tr.shown td.details-control::before {
             "Straße": "Gußstahlwerkstraße",
             "Hausnummer": "21",
             "PLZ": "8750",
-            "Ort": "Judenburg"
+            "Ort": "Judenburg",
+            "Lat": 47.1740506,
+            "Long": 14.6621881
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -36136,7 +36810,9 @@ tr.shown td.details-control::before {
             "Straße": "Fabriksgasse",
             "Hausnummer": "10",
             "PLZ": "8600",
-            "Ort": "Bruck an der Mur"
+            "Ort": "Bruck an der Mur",
+            "Lat": 47.4153498,
+            "Long": 15.2769709
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -36446,7 +37122,9 @@ tr.shown td.details-control::before {
             "Straße": "Elin-Motoren-Straße",
             "Hausnummer": "1",
             "PLZ": "8160",
-            "Ort": "Preding/Weiz"
+            "Ort": "Preding/Weiz",
+            "Lat": 47.1960715,
+            "Long": 15.6521152
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -36589,7 +37267,9 @@ tr.shown td.details-control::before {
             "Straße": "Burggasse",
             "Hausnummer": "15",
             "PLZ": "8750",
-            "Ort": "Judenburg"
+            "Ort": "Judenburg",
+            "Lat": 47.1678899,
+            "Long": 14.6589673
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -36702,7 +37382,9 @@ tr.shown td.details-control::before {
             "Straße": "Bahnhofviertel",
             "Hausnummer": "27",
             "PLZ": "8850",
-            "Ort": "Murau"
+            "Ort": "Murau",
+            "Lat": 47.1089219,
+            "Long": 14.1795046
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -36822,7 +37504,9 @@ tr.shown td.details-control::before {
             "Straße": "Kerpelystraße",
             "Hausnummer": "21",
             "PLZ": "8700",
-            "Ort": "Leoben"
+            "Ort": "Leoben",
+            "Lat": 47.3744121,
+            "Long": 15.0815425
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -36926,7 +37610,9 @@ tr.shown td.details-control::before {
             "Straße": "Am Ökopark",
             "Hausnummer": "10",
             "PLZ": "8230",
-            "Ort": "Hartberg"
+            "Ort": "Hartberg",
+            "Lat": 47.2599823,
+            "Long": 15.9713536
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -37044,7 +37730,9 @@ tr.shown td.details-control::before {
             "Straße": "Bahnhofstraße",
             "Hausnummer": "9-11",
             "PLZ": "8280",
-            "Ort": "Fürstenfeld"
+            "Ort": "Fürstenfeld",
+            "Lat": 47.0433463,
+            "Long": 16.0828403
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -37168,7 +37856,9 @@ tr.shown td.details-control::before {
             "Straße": "Altenmarkt",
             "Hausnummer": "75",
             "PLZ": "8551",
-            "Ort": "Wies"
+            "Ort": "Wies",
+            "Lat": 46.7157159,
+            "Long": 15.2563025
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -37313,7 +38003,9 @@ tr.shown td.details-control::before {
             "Straße": "Gleinstätten",
             "Hausnummer": "5",
             "PLZ": "8443",
-            "Ort": "Gleinstätten"
+            "Ort": "Gleinstätten",
+            "Lat": 46.7530485,
+            "Long": 15.3665385
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -37581,7 +38273,9 @@ tr.shown td.details-control::before {
             "Straße": "Thörl",
             "Hausnummer": "35",
             "PLZ": "8621",
-            "Ort": "Thörl"
+            "Ort": "Thörl",
+            "Lat": 47.5180503,
+            "Long": 15.2201447
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -37705,7 +38399,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptplatz",
             "Hausnummer": "35",
             "PLZ": "8570",
-            "Ort": "Voitsberg"
+            "Ort": "Voitsberg",
+            "Lat": 47.04968,
+            "Long": 15.1507408
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -38028,7 +38724,9 @@ tr.shown td.details-control::before {
             "Straße": "Gaslaternenweg",
             "Hausnummer": "4",
             "PLZ": "8041",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0468464,
+            "Long": 15.4616461
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -38295,7 +38993,9 @@ tr.shown td.details-control::before {
             "Straße": "Lapp-Finze-Straße",
             "Hausnummer": "21",
             "PLZ": "8401",
-            "Ort": "Kalsdorf bei Graz"
+            "Ort": "Kalsdorf bei Graz",
+            "Lat": 46.9651941,
+            "Long": 15.4571803
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -38602,7 +39302,9 @@ tr.shown td.details-control::before {
             "Straße": "Gamserstraße",
             "Hausnummer": "38",
             "PLZ": "8523",
-            "Ort": "Frauental an der Laßnitz"
+            "Ort": "Frauental an der Laßnitz",
+            "Lat": 46.8351744,
+            "Long": 15.2514695
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -38833,7 +39535,9 @@ tr.shown td.details-control::before {
             "Straße": "Gradnerstraße",
             "Hausnummer": "146",
             "PLZ": "8054",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0221845,
+            "Long": 15.4086699
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -39100,7 +39804,9 @@ tr.shown td.details-control::before {
             "Straße": "Plabutscher Straße",
             "Hausnummer": "42",
             "PLZ": "8051",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.085837,
+            "Long": 15.4057737
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -39305,7 +40011,9 @@ tr.shown td.details-control::before {
             "Straße": "Theodor-Körner-Straße",
             "Hausnummer": "151",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0917844,
+            "Long": 15.4252958
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -39503,7 +40211,9 @@ tr.shown td.details-control::before {
             "Straße": "Köflacher Gasse",
             "Hausnummer": "35–41",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0677697,
+            "Long": 15.4129881
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -39731,7 +40441,9 @@ tr.shown td.details-control::before {
             "Straße": "Münzenbergstraße",
             "Hausnummer": "38",
             "PLZ": "8700",
-            "Ort": "Leoben"
+            "Ort": "Leoben",
+            "Lat": 47.3898295,
+            "Long": 15.0905345
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -39874,7 +40586,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptstraße",
             "Hausnummer": "11",
             "PLZ": "8431",
-            "Ort": "Gralla"
+            "Ort": "Gralla",
+            "Lat": 46.8110904,
+            "Long": 15.550861
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -40071,7 +40785,9 @@ tr.shown td.details-control::before {
             "Straße": "Neubaugasse",
             "Hausnummer": "50",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0787589,
+            "Long": 15.4297034
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -40205,7 +40921,9 @@ tr.shown td.details-control::before {
             "Straße": "Europa-Allee",
             "Hausnummer": "6",
             "PLZ": "8160",
-            "Ort": "Weiz"
+            "Ort": "Weiz",
+            "Lat": 47.2180774,
+            "Long": 15.6259879
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -40309,7 +41027,9 @@ tr.shown td.details-control::before {
             "Straße": "Kapuzinerplatz",
             "Hausnummer": "11",
             "PLZ": "8720",
-            "Ort": "Knittelfeld"
+            "Ort": "Knittelfeld",
+            "Lat": 47.2148568,
+            "Long": 14.8272284
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -40470,7 +41190,9 @@ tr.shown td.details-control::before {
             "Straße": "Kada-Gasse",
             "Hausnummer": "1",
             "PLZ": "8430",
-            "Ort": "Leibnitz"
+            "Ort": "Leibnitz",
+            "Lat": 46.7804186,
+            "Long": 15.5379813
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -40624,7 +41346,9 @@ tr.shown td.details-control::before {
             "Straße": "Marktstraße",
             "Hausnummer": "43",
             "PLZ": "8967",
-            "Ort": "Haus"
+            "Ort": "Haus",
+            "Lat": 47.4104443,
+            "Long": 13.7709806
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -40916,7 +41640,9 @@ tr.shown td.details-control::before {
             "Straße": "Graschach",
             "Hausnummer": "38",
             "PLZ": "8443",
-            "Ort": "Gleinstätten"
+            "Ort": "Gleinstätten",
+            "Lat": 46.7530485,
+            "Long": 15.3665385
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -41027,7 +41753,9 @@ tr.shown td.details-control::before {
             "Straße": "Bahnhofstraße",
             "Hausnummer": "134",
             "PLZ": "8950",
-            "Ort": "Stainach"
+            "Ort": "Stainach",
+            "Lat": 47.5291984,
+            "Long": 14.1032652
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -41260,7 +41988,9 @@ tr.shown td.details-control::before {
             "Straße": "Bahnhofstraße",
             "Hausnummer": "78",
             "PLZ": "8401",
-            "Ort": "Kalsdorf bei Graz"
+            "Ort": "Kalsdorf bei Graz",
+            "Lat": 46.9651941,
+            "Long": 15.4571803
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -41372,7 +42102,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptstraße",
             "Hausnummer": "32",
             "PLZ": "8311",
-            "Ort": "Markt Hartmannsdorf"
+            "Ort": "Markt Hartmannsdorf",
+            "Lat": 47.054274,
+            "Long": 15.8417536
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -41596,7 +42328,9 @@ tr.shown td.details-control::before {
             "Straße": "Sattlerstraße",
             "Hausnummer": "45",
             "PLZ": "8077",
-            "Ort": "Gössendorf"
+            "Ort": "Gössendorf",
+            "Lat": 47.0094912,
+            "Long": 15.4691054
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -41824,7 +42558,9 @@ tr.shown td.details-control::before {
             "Straße": "Kapfensteinergasse",
             "Hausnummer": "3",
             "PLZ": "8160",
-            "Ort": "Weiz"
+            "Ort": "Weiz",
+            "Lat": 47.2192507,
+            "Long": 15.6235719
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -42052,7 +42788,9 @@ tr.shown td.details-control::before {
             "Straße": "Liebenauer Hauptstraße",
             "Hausnummer": "317",
             "PLZ": "8041",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0250035,
+            "Long": 15.4811723
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -42314,7 +43052,9 @@ tr.shown td.details-control::before {
             "Straße": "Energiestraße",
             "Hausnummer": "1",
             "PLZ": "8160",
-            "Ort": "Weiz"
+            "Ort": "Weiz",
+            "Lat": 47.2045345,
+            "Long": 15.6362029
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -42496,7 +43236,9 @@ tr.shown td.details-control::before {
             "Straße": "Wollsdorf",
             "Hausnummer": "80",
             "PLZ": "8181",
-            "Ort": "Wollsdorf"
+            "Ort": "Wollsdorf",
+            "Lat": 47.1390526,
+            "Long": 15.6806653
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -42636,7 +43378,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptstraße",
             "Hausnummer": "96",
             "PLZ": "8544",
-            "Ort": "Pölfing-Brunn"
+            "Ort": "Pölfing-Brunn",
+            "Lat": 46.7303965,
+            "Long": 15.2963278
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -42776,7 +43520,9 @@ tr.shown td.details-control::before {
             "Straße": "Conrad-Von-Hötzendorf-Straße",
             "Hausnummer": "84",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0565465,
+            "Long": 15.4464675
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -42940,7 +43686,9 @@ tr.shown td.details-control::before {
             "Straße": "Grazer Straße",
             "Hausnummer": "19-25",
             "PLZ": "8200",
-            "Ort": "Gleisdorf"
+            "Ort": "Gleisdorf",
+            "Lat": 47.10478,
+            "Long": 15.7038469
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -43224,7 +43972,9 @@ tr.shown td.details-control::before {
             "Straße": "Lastenstraße",
             "Hausnummer": "11",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0823795,
+            "Long": 15.4132585
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -43429,7 +44179,9 @@ tr.shown td.details-control::before {
             "Straße": "Triester Straße",
             "Hausnummer": "357–359",
             "PLZ": "8055",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0315055,
+            "Long": 15.4314474
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -43657,7 +44409,9 @@ tr.shown td.details-control::before {
             "Straße": "Mosdorfergasse",
             "Hausnummer": "1",
             "PLZ": "8160",
-            "Ort": "Weiz"
+            "Ort": "Weiz",
+            "Lat": 47.2240915,
+            "Long": 15.6186892
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -43878,7 +44632,9 @@ tr.shown td.details-control::before {
             "Straße": "Brauhausgasse",
             "Hausnummer": "1",
             "PLZ": "8700",
-            "Ort": "Leoben-Göss"
+            "Ort": "Leoben-Göss",
+            "Lat": 47.3630739,
+            "Long": 15.0942577
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -43987,7 +44743,9 @@ tr.shown td.details-control::before {
             "Straße": "Raffaltplatz",
             "Hausnummer": "19–23",
             "PLZ": "8850",
-            "Ort": "Murau"
+            "Ort": "Murau",
+            "Lat": 47.1110265,
+            "Long": 14.165877
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -44163,7 +44921,9 @@ tr.shown td.details-control::before {
             "Straße": "Am Graßnitzberg",
             "Hausnummer": "39",
             "PLZ": "8472",
-            "Ort": "Straß"
+            "Ort": "Straß",
+            "Lat": 46.6840944,
+            "Long": 15.6223621
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -44268,7 +45028,9 @@ tr.shown td.details-control::before {
             "Straße": "Stürgkh Weg",
             "Hausnummer": "29",
             "PLZ": "8493",
-            "Ort": "Klöch"
+            "Ort": "Klöch",
+            "Lat": 46.7642309,
+            "Long": 15.9668861
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -44394,7 +45156,9 @@ tr.shown td.details-control::before {
             "Straße": "Radetzkystraße",
             "Hausnummer": "15",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0663294,
+            "Long": 15.439097
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -44536,7 +45300,9 @@ tr.shown td.details-control::before {
             "Straße": "Sparkassenplatz",
             "Hausnummer": "4",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.06921,
+            "Long": 15.4370791
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -44672,7 +45438,9 @@ tr.shown td.details-control::before {
             "Straße": "Herrengasse",
             "Hausnummer": "18–20",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.06961,
+            "Long": 15.4400445
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -44794,7 +45562,9 @@ tr.shown td.details-control::before {
             "Straße": "Europastraße",
             "Hausnummer": "11",
             "PLZ": "8330",
-            "Ort": "Feldbach"
+            "Ort": "Feldbach",
+            "Lat": 46.9536991,
+            "Long": 15.9043664
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -44989,7 +45759,9 @@ tr.shown td.details-control::before {
             "Straße": "Leonhardgürtel",
             "Hausnummer": "10",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0747499,
+            "Long": 15.4546961
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -45155,7 +45927,9 @@ tr.shown td.details-control::before {
             "Straße": "Flughafenstraße",
             "Hausnummer": "51",
             "PLZ": "8073",
-            "Ort": "Feldkirchen"
+            "Ort": "Feldkirchen",
+            "Lat": 46.9960059,
+            "Long": 15.4440822
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -45305,7 +46079,9 @@ tr.shown td.details-control::before {
             "Straße": "Retznei",
             "Hausnummer": "34",
             "PLZ": "8461",
-            "Ort": "Ehrenhausen"
+            "Ort": "Ehrenhausen",
+            "Lat": 46.735392,
+            "Long": 15.5724829
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -45440,7 +46216,9 @@ tr.shown td.details-control::before {
             "Straße": "Leonhardstraße",
             "Hausnummer": "8",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0719202,
+            "Long": 15.449349
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -45573,7 +46351,9 @@ tr.shown td.details-control::before {
             "Straße": "Tauplitzalm",
             "Hausnummer": "1",
             "PLZ": "8982",
-            "Ort": "Tauplitz"
+            "Ort": "Tauplitz",
+            "Lat": 47.5739909,
+            "Long": 14.0075924
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -45732,7 +46512,9 @@ tr.shown td.details-control::before {
             "Straße": "Grieskai",
             "Hausnummer": "12",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0694626,
+            "Long": 15.4345258
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -45838,7 +46620,9 @@ tr.shown td.details-control::before {
             "Straße": "Hofbergweg",
             "Hausnummer": "61",
             "PLZ": "8333",
-            "Ort": "Riegersburg"
+            "Ort": "Riegersburg",
+            "Lat": 47.0040164,
+            "Long": 15.9438207
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -46011,7 +46795,9 @@ tr.shown td.details-control::before {
             "Straße": "Gartengasse",
             "Hausnummer": "14",
             "PLZ": "8200",
-            "Ort": "Gleisdorf"
+            "Ort": "Gleisdorf",
+            "Lat": 47.1021315,
+            "Long": 15.7107779
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -46202,7 +46988,9 @@ tr.shown td.details-control::before {
             "Straße": "Lazarettgürtel",
             "Hausnummer": "55",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0610962,
+            "Long": 15.425491
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -46348,7 +47136,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptplatz",
             "Hausnummer": "22-25",
             "PLZ": "8330",
-            "Ort": "Feldbach"
+            "Ort": "Feldbach",
+            "Lat": 46.9534231,
+            "Long": 15.8883799
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -46440,7 +47230,9 @@ tr.shown td.details-control::before {
             "Straße": "Dr.-Karl-Widdmann-Straße",
             "Hausnummer": "100",
             "PLZ": "8160",
-            "Ort": "Thannhausen"
+            "Ort": "Thannhausen",
+            "Lat": 47.2285671,
+            "Long": 15.6190264
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -46572,7 +47364,9 @@ tr.shown td.details-control::before {
             "Straße": "Bürgergasse",
             "Hausnummer": "22",
             "PLZ": "8200",
-            "Ort": "Gleisdorf"
+            "Ort": "Gleisdorf",
+            "Lat": 47.1054189,
+            "Long": 15.7068807
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -46718,7 +47512,9 @@ tr.shown td.details-control::before {
             "Straße": "Mühlgasse",
             "Hausnummer": "1",
             "PLZ": "8330",
-            "Ort": "Feldbach"
+            "Ort": "Feldbach",
+            "Lat": 46.9573554,
+            "Long": 15.8915578
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -46828,7 +47624,9 @@ tr.shown td.details-control::before {
             "Straße": "Grazbachgasse",
             "Hausnummer": "44-48",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0645819,
+            "Long": 15.4417589
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -46927,7 +47725,9 @@ tr.shown td.details-control::before {
             "Straße": "Am Platz",
             "Hausnummer": "1",
             "PLZ": "8062",
-            "Ort": "Kumberg"
+            "Ort": "Kumberg",
+            "Lat": 47.1595973,
+            "Long": 15.5346768
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -47056,7 +47856,9 @@ tr.shown td.details-control::before {
             "Straße": "Baumschulgasse",
             "Hausnummer": "1–4",
             "PLZ": "8230",
-            "Ort": "Hartberg"
+            "Ort": "Hartberg",
+            "Lat": 47.2876686,
+            "Long": 15.9788591
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -47175,7 +47977,9 @@ tr.shown td.details-control::before {
             "Straße": "Mühlweg",
             "Hausnummer": "1",
             "PLZ": "8451",
-            "Ort": "Heimschuh"
+            "Ort": "Heimschuh",
+            "Lat": 46.7596368,
+            "Long": 15.4892355
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -47305,7 +48109,9 @@ tr.shown td.details-control::before {
             "Straße": "Kaiser-Franz-Josef-Straße",
             "Hausnummer": "26",
             "PLZ": "8344",
-            "Ort": "Bad Gleichenberg"
+            "Ort": "Bad Gleichenberg",
+            "Lat": 46.8723003,
+            "Long": 15.9046488
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -47426,7 +48232,9 @@ tr.shown td.details-control::before {
             "Straße": "Hauptplatz",
             "Hausnummer": "6",
             "PLZ": "8600",
-            "Ort": "Bruck an der Mur"
+            "Ort": "Bruck an der Mur",
+            "Lat": 47.40998,
+            "Long": 15.2696132
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -47540,7 +48348,9 @@ tr.shown td.details-control::before {
             "Straße": "Rössing",
             "Hausnummer": "122",
             "PLZ": "8972",
-            "Ort": "Ramsau am Dachstein"
+            "Ort": "Ramsau am Dachstein",
+            "Lat": 47.4295941,
+            "Long": 13.7201251
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -47724,7 +48534,9 @@ tr.shown td.details-control::before {
             "Straße": "Hofing",
             "Hausnummer": "12",
             "PLZ": "8221",
-            "Ort": "Feistritztal"
+            "Ort": "Feistritztal",
+            "Lat": 47.189801,
+            "Long": 15.8465581
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -47859,7 +48671,9 @@ tr.shown td.details-control::before {
             "Straße": "Flurgasse",
             "Hausnummer": "13",
             "PLZ": "8230",
-            "Ort": "Hartberg"
+            "Ort": "Hartberg",
+            "Lat": 47.2754861,
+            "Long": 15.9669935
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -47999,7 +48813,9 @@ tr.shown td.details-control::before {
             "Straße": "Fabriksgasse",
             "Hausnummer": "15",
             "PLZ": "8020",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0588605,
+            "Long": 15.4282584
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -48102,7 +48918,9 @@ tr.shown td.details-control::before {
             "Straße": "Krenngasse",
             "Hausnummer": "28",
             "PLZ": "8010",
-            "Ort": "Graz"
+            "Ort": "Graz",
+            "Lat": 47.0673043,
+            "Long": 15.4591455
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -48237,7 +49055,9 @@ tr.shown td.details-control::before {
             "Straße": "Mühldorf",
             "Hausnummer": "158",
             "PLZ": "8330",
-            "Ort": "Feldbach"
+            "Ort": "Feldbach",
+            "Lat": 46.9419957,
+            "Long": 15.912197
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -48365,7 +49185,9 @@ tr.shown td.details-control::before {
             "Straße": "Obergnas",
             "Hausnummer": "38",
             "PLZ": "8342",
-            "Ort": "Obergnas"
+            "Ort": "Obergnas",
+            "Lat": 46.8936521,
+            "Long": 15.7992526
         },
         "Mitarbeiterzahl": {
             "Zahl der Mitarbeiter:innen bei Gründung": {
@@ -48389,10 +49211,6 @@ tr.shown td.details-control::before {
             "Industrie"
         ]
     }
-]
-
-
-
 ];
 
         // Format function: what to show when a row is expanded
