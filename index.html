@@ -33,9 +33,43 @@
         }
 
 
-        ul.pagination a {
-            color: #EFEFEF;
-        }
+        /* Styling for the Pagination buttons */
+.dt-paging-button {
+    padding: 0.5rem 0.75rem !important;
+    margin: 0 0.2rem !important;
+    border-radius: 0.375rem !important;
+    border: 1px solid #d1d5db !important;
+    background-color: white !important;
+    color: #166434 !important; /* Green text */
+    cursor: pointer;
+}
+
+/* Hover effect */
+.dt-paging-button:hover {
+    background-color: #f0fdf4 !important; /* Very light green */
+    border-color: #166434 !important;
+}
+
+/* Active/Current page button */
+.dt-paging-button.current {
+    background-color: #166434 !important; /* Dark green */
+    color: white !important;
+    border-color: #166434 !important;
+}
+
+/* Disabled buttons (prev/next at ends) */
+.dt-paging-button.disabled {
+    color: #9ca3af !important;
+    cursor: not-allowed;
+    background-color: #f9fafb !important;
+}
+
+/* Fix for the bottom info text (e.g., "Showing 1 to 10...") */
+.dt-info {
+    color: #374151 !important;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
 
         td.details-control {
     cursor: pointer;
@@ -93,12 +127,12 @@ tr.shown td.details-control::before {
             <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-green-500 pb-2">Unternehmensliste</h2>
             <!-- Data will be populated by Datatables -->
             <table id="companyTable" class="w-full text-sm text-left text-gray-900 rounded-lg overflow-hidden">
-                <thead class="text-xs text-white-700 uppercase bg-green-500">
+                <thead class="text-xs text-white uppercase bg-green-700">
                     <tr>
                         <th></th>
                         <th scope="col" class="px-6 py-3">Name</th>
                         <th scope="col" class="px-6 py-3">Gründungsjahr</th>
-                        <th scope="col" class="px-6 py-3">Aktuelle Branche</th>
+                        <th scope="col" class="px-6 py-3">Wirtschaftssektor</th>
                         <th scope="col" class="px-6 py-3">Ort</th>
                     </tr>
                 </thead>
