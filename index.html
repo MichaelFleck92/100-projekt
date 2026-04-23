@@ -49285,6 +49285,12 @@ tr.shown td.details-control::before {
                     <h3 class="font-semibold mb-1">Unternehmensgeschichte</h3>
                     <p class="whitespace-pre-line">${company.Unternehmensgeschichte || '-'}</p>
                 </div>
+                <div class="mt-4">
+                    <h3 class="font-semibold mb-1">Quellen- und Literaturangaben</h3>
+                    <ul class="list-disc list-inside">
+                        ${(company["Quellen- und Literaturangaben"] || []).map(src => `<li>${src}</li>`).join('') || '<li>-</li>'}
+                    </ul>
+                </div>
             </div>
         `;
     }
